@@ -1,0 +1,37 @@
+graph lectura{
+{
+ ranksep=5;
+ root= especificacion;
+ node [shape=box];
+ especificacion [shape = box];
+ muestra
+ miembro [label = "miembro rodam"]
+}
+
+
+{
+	node [shape = diamond]
+	de [label = "de una"]
+	segun [label = "según"]
+	registra
+	verifica
+
+}
+
+lectura -- de
+de -- muestra
+lectura -- segun
+segun -- especificacion
+lectura -- id_lectura
+lectura -- resultado
+lectura -- lote_material
+lectura -- fecha_inicio
+lectura -- fecha_fin
+lectura -- registra
+registra -- miembro
+lectura -- verifica
+verifica -- miembro 
+
+label = "Registro de lectura";
+fontsize=20;
+}

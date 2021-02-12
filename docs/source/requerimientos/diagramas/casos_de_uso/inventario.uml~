@@ -1,0 +1,25 @@
+@startuml
+
+rectangle "Ingreso de inventario" {
+
+:Miembro Rodam: --> (Ingresar Origen) 
+:Miembro Rodam: --> (Ingresar Sector)
+:Miembro Rodam: --> (Ingresar Equipos)
+:Miembro Rodam: --> (Ingresar Ciudad) 
+:Miembro Rodam: --> (Ingresar Cliente)
+:Miembro Rodam: --> (Ingresar Empresa)
+:Miembro Rodam: --> (Ingresar Cargos)
+:Miembro Rodam: --> (Materiales Controlados)
+}
+
+rectangle "Ingreso de Catálogo" {
+:Microbiólogo: --> (Ingresar Método) : puede
+:Microbiólogo: --> (Ingresar Análisis) : puede
+:Microbiólogo: --> (Configurar grupos) : puede
+
+}
+
+
+
+
+@enduml

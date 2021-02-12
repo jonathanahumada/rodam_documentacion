@@ -1,0 +1,61 @@
+
+#+BEGIN_SRC sql
+  create view codigos_especificaciones as select id_producto,
+  id_grupo,id_analisis, id_metodo,  id_material_controlado, valor from
+  especificacion join debe_tener on especificacion.id_debe_tener =
+  debe_tener.id_debe_tener join utiliza on especificacion.id_utiliza =
+  utiliza.id_utiliza;
+
+#+END_SRC
+
+#+BEGIN_SRC sql
+  create view especificaciones_con_nombres as select producto.nom_producto,
+  grupo.nom_grupo, analisis.nom_analisis, metodo.nom_metodo, metodo.material,
+  material_controlado.nom_material as material_controlado, valor from codigos_especificaciones
+  v_espec join producto on producto.id_producto = v_espec.id_producto
+  join grupo on grupo.id_grupo = v_espec.id_grupo join analisis on
+  analisis.id_analisis = v_espec.id_analisis join metodo on
+  metodo.id_metodo = v_espec.id_metodo join material_controlado on
+  material_controlado.id_material = v_espec.id_material_controlado;
+#+END_SRC
+
+
+
+#+BEGIN_SRC sql
+  create view lectura_maestra as select * from especificacion, lectura
+  where lectura.id_especificacion = especificacion.id_especificacion;
+
+#+END_SRC
+
+
+#+BEGIN_SRC sql
+
+  create view lectura_expandida as select debe_tener.id_producto,
+  id_muestra, debe_tener.id_grupo, utiliza.id_analisis,
+  utiliza.id_metodo, id_material_controlado, valor as especificacion,
+  valor_lectura as resultado,  lote_medio, registra, verifica,concepto
+  from lectura_maestra join debe_tener on debe_tener.id_debe_tener =
+  lectura_maestra.id_debe_tener join utiliza on utiliza.id_utiliza =
+  lectura_maestra.id_utiliza;
+
+#+END_SRC
+
+
+#+BEGIN_SRC sql
+  create view lectura_con_nombres as select producto.nom_producto,
+  id_muestra, grupo.nom_grupo, analisis.nom_analisis, metodo.nom_metodo,
+  material_controlado.nom_material, especificacion, resultado, metodo.material as material,
+  lote_medio, registra, verifica, concepto from lectura_expandida join
+  producto on producto.id_producto = lectura_expandida.id_producto join
+  grupo on grupo.id_grupo = lectura_expandida.id_grupo join analisis on
+  analisis.id_analisis = lectura_expandida.id_analisis join metodo on
+  metodo.id_metodo = lectura_expandida.id_metodo join
+  material_controlado on material_controlado.id_material =
+  lectura_expandida.id_material_controlado;
+
+#+END_SRC
+
+
+
+
+

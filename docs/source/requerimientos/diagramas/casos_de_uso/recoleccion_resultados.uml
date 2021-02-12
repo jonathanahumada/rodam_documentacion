@@ -1,0 +1,11 @@
+@startuml
+
+skinparam actorStyle awesome
+
+
+rectangle "Recoleccion de resultados" {
+:Microbiólogo: --> (Registra Lectura)
+:Microbiólogo: --> (Compara con especificación)
+}
+
+@enduml 

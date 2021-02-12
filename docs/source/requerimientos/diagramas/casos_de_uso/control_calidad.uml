@@ -1,0 +1,9 @@
+@startuml
+
+skinparam actorStyle awesome
+
+rectangle "Control de calidad" {
+:Microbiógo: --> (Registra control de material)
+}
+
+@enduml

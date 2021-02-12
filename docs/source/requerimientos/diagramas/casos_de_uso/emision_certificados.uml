@@ -1,0 +1,16 @@
+@startuml
+
+skinparam actorStyle awesome
+
+
+
+
+rectangle "Emisión de certificados" {
+:Miembro Rodam: --> (Generar certificado)
+:Miembro Rodam: --> (Generar Factura)
+:Cliente rodam: --> (Generar certificado)
+}
+
+
+
+@enduml

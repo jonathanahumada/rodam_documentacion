@@ -1,0 +1,58 @@
+graph lectura{
+{
+ ranksep=5;
+ root= especificacion;
+ node [shape=box];
+ 
+ debe_tener [shape=Mdiamond, style= filled];
+
+ utiliza [shape= Mdiamond, style = filled ];
+
+ especificacion [shape = box];
+ para [shape = diamond]
+
+ material_controlado [label = "material controlado"]
+ muestra
+ miembro [label = "miembro rodam"]
+}
+
+
+{
+	node [shape = diamond]
+	de [label = "de una"]
+	segun [label = "según"]
+	registra
+	verifica
+
+}
+
+lectura -- de
+de -- muestra
+lectura -- segun
+segun -- especificacion
+lectura -- id_lectura
+lectura -- resultado
+lectura -- lote_medio
+lectura -- fecha_inicio
+lectura -- fecha_fin
+lectura -- registra
+registra -- miembro
+lectura -- verifica
+verifica -- miembro 
+
+especificacion --  debe_tener [label = 1]
+especificacion -- valor [label = 1]
+debe_tener -- id_producto 
+debe_tener -- id_grupo 
+especificacion -- utiliza [label = 1]
+utiliza -- id_analisis 
+utiliza -- id_metodo 
+especificacion -- para [label = n]
+para -- material_controlado [label = 1]
+material_controlado -- id_material 
+
+
+ 
+label = "Especificación de un producto";
+fontsize=20;
+}

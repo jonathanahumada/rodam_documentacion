@@ -1,0 +1,30 @@
+@startuml
+
+ 
+Title Casos de uso: Módulo Laboratorio
+
+
+left to right direction
+skinparam actorStyle awesome
+
+
+:Microbiólogo: --> (Ingresar Método) 
+:Microbiólogo: --> (Ingresar Muestra) 
+:Microbiólogo: --> (Ingresar Análisis)
+:Microbiólogo: --> (Ingresar Producto)
+:Microbiólogo: --> (Ingresar Equipo)
+:Microbiólogo: --> (Ingresar Cargo)
+:Microbiólogo: --> (Ingresar Grupo)
+:Microbiólogo: --> (Ingresar Remisión)
+:Microbiólogo: --> (Registra Lectura)
+:Microbiólogo: --> (Generar certificado)
+
+:Miembro Rodam: --> (Ingresar Origen) 
+:Miembro Rodam: --> (Ingresar Sector)
+:Miembro Rodam: --> (Ingresar Equipos)
+:Miembro Rodam: --> (Ingresar Ciudad) 
+:Miembro Rodam: --> (Ingresar Cliente)
+:Miembro Rodam: --> (Ingresar Empresa)
+
+:Cliente rodam: --> (Generar certificado)
+@enduml

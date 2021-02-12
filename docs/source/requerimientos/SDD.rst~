@@ -1,0 +1,36 @@
+===================
+Documento de Diseño
+===================
+
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date: <2021-01-19 Tue>
+       
+Introducción
+============
+
+El propósito de este documento es documentar el diseño del módulo de
+laboratorio, desde una perspectiva más técnica que la descrita en la
+*Especificación de Requerimientos*.  Este documento está dirigido a
+desarrolladores que quieran comprender el por qué de ciertas
+decisiones en cuanto al diseño.
+
+
+La parte más relevante del diseño es el diseño de base de datos. Por
+lo tanto, este será el enfoque de este documento
+
+
+Descripción del Dominio
+=======================
+
+La ventaja de un diagrama Entidad - Relación es que es agnóstico a la
+implementación que se le de. Comencemos explorando las entidades
+principales implicadas en el este módulo.
+
+Una primera aproximación del problema sería la siguiente:
+
+.. image:: diagramas/entidad_relacion.png
+   :align: center
+
+
+

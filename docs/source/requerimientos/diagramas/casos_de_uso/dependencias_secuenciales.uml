@@ -1,0 +1,71 @@
+@startuml
+<style>
+title {
+ FontSize 34
+ FontColor black}
+
+legend {
+  FontSize 30
+  BackGroundColor yellow
+  Margin 30
+  Padding 50
+}
+ </style>
+ 
+Title Caracterización de Casos de uso : Módulo Laboratorio
+
+legend
+Dependencias secuenciales
+end legend
+skinparam actorStyle awesome
+
+
+
+rectangle "Ingreso de inventario" {
+
+:Miembro Rodam: --> (Ingresar Origen)
+:Miembro Rodam: --> (Ingresar Sector)
+:Miembro Rodam: --> (Ingresar Equipos)
+:Miembro Rodam: --> (Ingresar Ciudad)
+:Miembro Rodam: --> (Ingresar Empresa)
+:Miembro Rodam: --> (Ingresar Cargo)
+(Ingresar Cliente) --> (Ingresar Empresa)
+:Miembro Rodam: --> (Ingresar Cliente)
+}
+
+rectangle "Creación de Catálogo" {
+:Microbiólogo: --> (Ingresar Método)
+:Microbiólogo: --> (Ingresar Análisis)
+:Microbiólogo: --> (Asignar Grupos) 
+(Ingresar Análisis) --> (Ingresar Método) : depende de
+}
+
+rectangle "Ingreso de muestras" {
+:Persona de Ingreso: --> (Ingresar Muestra)
+(Ingresar Muestra) --> (Ingresar Producto) : depende de
+:Persona de Ingreso: --> (Ingresar Producto) : puede
+(Ingresar Producto)  --> (Ingresar Cliente) : depende de 
+(Ingresar Producto) --> (Ingresar Análisis) : depende de
+(Ingresar Muestra) --> (Ingresar Cargo): depende de
+:Persona de Ingreso: --> (Especificar Producto)
+}
+
+(Ingresar Análisis) -->  (Ingresar Sector) : depende de
+(Ingresar Producto) --> (Ingresar Sector) : depende de
+(Ingresar Método) --> (Ingresar Equipos) : depende de
+
+rectangle "Recolección de resultados" {
+:Microbiólogo: --> (Registra Lectura)
+:Microbiólogo: --> (Consulta especificación)
+(Registra Lectura) --> (Ingresar Muestra) : depende de
+
+}
+
+rectangle "Emisión de certificados" {
+:Miembro Rodam: --> (Generar certificado)
+:Cliente rodam: --> (Generar certificado)
+}
+
+(Generar certificado) --> (Registra Lectura) : depende de 
+
+@enduml

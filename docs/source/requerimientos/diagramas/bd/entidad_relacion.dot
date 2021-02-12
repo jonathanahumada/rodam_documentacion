@@ -1,0 +1,82 @@
+// Este es el gráfico ER de la base de datos para el Laboratorio
+
+
+
+graph IngresoMuestras{
+
+{
+ ranksep=5;
+ root= especificacion;
+ node [shape=box];
+ especificacion [shape=box];
+ materialcontrolado [shape= box];
+ grupo [shape= box];
+ análisis [shape= box];
+ método [shape=box];
+ participa [shape=diamond, width = 0.4, style=filled];
+ producto [shape=box];
+ tiene [shape=diamond, width = 0.4, style = filled];
+ asociado [shape=diamond, width =0.4, style = filled];
+ debe_tener [shape=Mdiamond, style= filled];
+ agrupacion [shape=Mdiamond, style = filled];
+ utiliza [shape= box ];
+ agrupacion [shape = Mdiamond, style = filled];
+ lectura [shape = box ];
+ relacion [shape = Mdiamond , style = filled]
+ 
+ 
+ compuesto [label= "compuesto por",shape=diamond, width =0.4, style = filled];
+ agrupa [shape=diamond, width =0.4, style = filled];
+ lectura [shape=box]
+}
+
+
+subgraph cluster_catalogo {
+	label = "Catálogo"
+	análisis -- utiliza
+	utiliza -- método
+
+
+	grupo -- agrupacion
+	agrupacion -- análisis
+
+	
+}
+
+subgraph cluster_ingreso_muestra {
+	label = "Ingreso de muestras"
+
+	producto -- debe_tener
+	debe_tener -- grupo
+
+	especificacion -- debe_tener
+	especificacion -- utiliza
+	
+
+}
+
+
+subgraph cluster_recoleccion_resultados {
+	label = "Recolección de resultados"
+	
+
+}
+// participa -- especificacion [label=1]
+// grupo -- participa [label="1"]
+// grupo -- asociado [label= "n"]
+// grupo -- agrupa [label="n"]
+// agrupa -- análisis [label="n"]
+
+// asociado -- producto [label= "n"]
+// producto -- participa [label="1"]
+// análisis -- participa [label="1"]
+// análisis -- compuesto [label= "1"]
+// compuesto -- método   [label="n"]
+// método -- participa   [label="1"]
+// especificacion -- tiene [label="1"]
+// tiene --  lectura [label="1"]
+ 
+ 
+label = "Diagrama ER para Módulo Laboratorio";
+fontsize=20;
+}

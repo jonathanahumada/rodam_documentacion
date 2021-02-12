@@ -1,0 +1,85 @@
+* Tecnología frontend
+
+Conceptos a tener en cuenta 
+
+- on-premise vs cloud 
+
+(se refieren al tipo de *despliege*)
+
+- low code vs high-code
+
+(se refieren al tipo de desarrollo)
+
+* On premise 
+- No sé montar una LAN
+- Un IT permanente
+- asesoría para hardware
+- espacio 
+
+* Cloud
+- distintos servicios
+- entender lenguaje marketing (host)
+
+
+** Opciones
+
+- access / libreoffice
+  - vistas limitadas 
+  - lento de usar 
+  - difícil documentación 
+
+====================
+- Lansa (IBM)
+  - es el mas pro
+  - tiene un lenguaje propio
+  - curva de aprendizaje no predecible
+  - no aplica 
+
+- Oustystems
+  - SAP
+  - AI
+  - pierde de vista sql
+
+- Salesforce
+  - CRM
+  - pierde de vista sql
+  
+
+====================
+
+- airtable
+  - no orientado a sql
+
+- monday
+  - no orientado a sql 
+
+
+* Code (frameworks normales)
+
+- vfront
+  - los demos no funcionan bien
+  - feo
+
+- flask
+  - avances más inmediatos. 
+  - propio systema de login
+
+- Django
+  - aprendizaje más largo
+  - fórmula de industria
+  - nunca lo he intentado
+
+
+
+** Oracle
+- 365 $ mes
+- otra página para emisión de certificados
+- el servicio es tan complejo que es dificil estimar
+
+- el workspace sí es grátis. ¿Pero cómo estamos pagando?
+
+
+El problema es :
+ - qué servicios son gratis y cuáles no
+ - cómo sé cuáles necesito
+ - https://docs.oracle.com/en/cloud/paas/autonomous-database/atpdg/apex-restrictions.html#GUID-E13D5044-B9DD-4168-8A12-C99532940DA9

@@ -1,0 +1,32 @@
+@startuml
+saturday are closed
+sunday are closed
+
+Project starts 2021-02-12
+[reunion Daniel] lasts 1 days
+note bottom
+ aclarar
+ - qué vistas pueden permanecer en admin
+ - si los actores están bien
+end note
+then [Terminar prácticas] lasts 3 days
+then [Fase general de diseño] lasts 5 days
+then [estilos] lasts 3 days
+then [Modulo Inventario] lasts 1 days
+then [Testing Inventario] lasts 1 days
+then [Modulo Catálogo] lasts 3 days
+then [Testing Catálogo] lasts 3 days
+then [Módulo Ingreso Muestras]  lasts 5 days
+note bottom 
+ aclarar qué vistas necesitan los microbiologos
+end note
+then [Testing Muestras] lasts 5 days
+     
+then [Módulo Emision] lasts 10 days
+then [Testing Emision] lasts 5 days
+then [Despliege en servidor] lasts 5 days
+
+
+
+
+@enduml

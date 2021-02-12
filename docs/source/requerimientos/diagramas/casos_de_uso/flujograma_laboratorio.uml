@@ -1,0 +1,24 @@
+digraph flujo{
+
+ranksep=0.5;
+rankdir = "LR";
+node [shape = rect]
+inventario [label = "Inventario"]
+catalogo [label = "Catálogo"]	
+muestras [label="Ingreso de Muestras"]
+resultados [label="Recolección de Resultados"]
+control_medio [label="Calidad de los medios"]
+emision [label ="Emisión de certificados"]
+
+inventario -> catalogo
+catalogo -> muestras
+muestras -> resultados
+resultados -> control_medio
+control_medio -> emision
+ 
+
+
+ 
+
+
+}

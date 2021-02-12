@@ -1,0 +1,11 @@
+@startuml
+
+skinparam actorStyle awesome
+
+rectangle "Ingreso de muestras" {
+:Persona de Ingreso: --> (Ingresar Producto) 
+:Persona de Ingreso: --> (Especificar Producto)
+:Persona de Ingreso: --> (Ingresar Muestra) 
+}
+
+@enduml

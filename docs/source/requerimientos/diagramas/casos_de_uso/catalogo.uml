@@ -1,0 +1,8 @@
+@startuml
+
+rectangle "Ingreso de Catálogo" {
+:Microbiólogo: --> (Ingresar Método) : puede
+:Microbiólogo: --> (Ingresar Análisis) : puede
+:Microbiólogo: --> (Configurar grupos) : puede
+
+@enduml

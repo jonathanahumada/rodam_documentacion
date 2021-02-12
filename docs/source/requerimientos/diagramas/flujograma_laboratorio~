@@ -1,0 +1,19 @@
+digraph flujo{
+
+ranksep=0.5;
+rankdir = "LR";
+inventario [label = "Inventario"]	
+muestras [label="Ingreso de Muestras"]
+resultados [label="Recolección de Resultados"]
+emision [label ="Emisión de certificados"]
+
+inventario -> muestras
+muestras -> resultados
+resultados -> emision
+ 
+
+
+ 
+
+
+}

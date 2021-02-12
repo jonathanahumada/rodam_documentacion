@@ -1,0 +1,36 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Documento de Especificaci\IeC {\'o}n de Requerimientos}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Referencias a otros documentos}{1}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Descripci\IeC {\'o}n General}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Funcionalidades del sistema}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Caracterizaci\IeC {\'o}n de los casos de uso}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Dependencias secuenciales}{5}{subsection.1.3.2}
+\contentsline {chapter}{\numberline {2}Documento de Dise\IeC {\~n}o}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Dise\IeC {\~n}o de base de datos}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}El ingreso de muestras}{8}{subsection.2.2.1}
+\contentsline {chapter}{\numberline {3}Modelo relacional del laboratorio}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Resumen}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Documentos relacionados}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Objetivo}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Definiciones}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Repaso por los casos de uso}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Inicio del flujo}{12}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Configurando la sesion}{12}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Inventario}{13}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Creaci\IeC {\'o}n de Cat\IeC {\'a}logo}{16}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Creaci\IeC {\'o}n de an\IeC {\'a}lisis}{19}{section.3.6}
+\contentsline {section}{\numberline {3.7}Creaci\IeC {\'o}n de Grupos}{23}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Ingreso de Muestras}{25}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.8}Ingreso de un producto}{25}{section.3.8}
+\contentsline {section}{\numberline {3.9}Especificar un producto}{26}{section.3.9}
+\contentsline {section}{\numberline {3.10}Ingreso de una muestra}{35}{section.3.10}
+\contentsline {section}{\numberline {3.11}Ingreso de lectura}{35}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Control de calidad de los medios}{39}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Emisi\IeC {\'o}n de certificados}{41}{subsection.3.11.2}
+\contentsline {section}{\numberline {3.12}Informacion del cliente}{41}{section.3.12}
+\contentsline {section}{\numberline {3.13}Informaci\IeC {\'o}n de la muestra}{42}{section.3.13}
+\contentsline {section}{\numberline {3.14}Resumen analisis}{42}{section.3.14}
+\contentsline {section}{\numberline {3.15}Equipos utilizados}{43}{section.3.15}
+\contentsline {chapter}{\numberline {4}Indices and tables}{45}{chapter.4}
