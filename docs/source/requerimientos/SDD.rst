@@ -2,10 +2,17 @@
 Documento de Diseño
 ===================
 
+.. |date| date::
+	  
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date: <2021-01-19 Tue>
-       
+:date:  último build el |date|
+
+
+
+
+
+
 Introducción
 ============
 

@@ -2,9 +2,13 @@
 Documento de Especificación de Requerimientos
 =============================================
 
+.. |date| date::
+
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date: <2021-01-15 Fri>
+:date: último build el |date|
+
+
 
 Introducción
 ============

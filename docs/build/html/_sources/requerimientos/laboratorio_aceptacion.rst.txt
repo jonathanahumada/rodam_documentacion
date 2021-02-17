@@ -1,6 +1,12 @@
 =================================
-Modelo relacional del laboratorio
+Prueba de aceptación
 =================================
+
+.. |date| date::
+	  
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date:  último build el |date|
 
 Resumen
 -------

@@ -1,0 +1,8 @@
+====================
+Diccionario de datos
+====================
+
+
+
+.. csv-table:: Diccionario
+   :file: ./diccionario_datos.csv 

@@ -1,7 +1,5 @@
 mover : lectura asociaciones especificacion
-	mv lectura.png asociaciones.png especificacion.png /Users/jaumaf/.devs/rodam/docs/source/assets/
-
-
+	mv lectura.png asociaciones.png especificacion.png  /Volumes/Polyphemus/jaumaf/.devs/documentation-laboratorio/docs/source/assets
 lectura : 
 	dot -Tpng lectura.dot  > lectura.png
 

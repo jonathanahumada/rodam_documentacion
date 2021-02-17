@@ -14,6 +14,7 @@ Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
    /requerimientos/srs
    /requerimientos/SDD
    /requerimientos/laboratorio_aceptacion
+   /requerimientos/diccionario_datos
 
    
 Indices and tables
