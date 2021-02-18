@@ -1,12 +1,12 @@
-from sqlalchemy import (create_engine, Column, Integer, String,
-                     ForeignKey,DateTime, Boolean, Float,Table)
-
-
 from sqlalchemy.orm import relationship,sessionmaker
 from datetime import datetime
-from rodam.conf import Base
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey,DateTime, Boolean, Float, Table
+from sqlalchemy.orm import relationship
+from datetime import datetime
 
-
+Base = declarative_base()
 
 class Sector(Base):
     __tablename__="sector"
@@ -50,7 +50,6 @@ class Metodo(Base):
 
 
                            
-                                           
 class Utiliza(Base):
     __tablename__ = 'utiliza'
     id_utiliza = Column(Integer, primary_key= True)
@@ -145,7 +144,7 @@ class Especificacion(Base):
     id_especificacion= Column(Integer, primary_key=True)
     id_debe_tener = Column(Integer, ForeignKey("debe_tener.id_debe_tener"))
     id_utiliza = Column(Integer,ForeignKey('utiliza.id_utiliza'))
-    id_material_controlado = Column(Integer, ForeignKey('material_controlado.id_material'), default=1)
+    id_material_de_control = Column(Integer, ForeignKey('material_de_control.id_material'), default=1)
     valor = Column(String)
     
  
@@ -224,7 +223,6 @@ class Cliente(Base):
     id_empresa = Column(Integer, ForeignKey("empresa.id_empresa"), primary_key= True)
     retencion = Column(Float)
     IVA = Column(Float)
-    ISA = Column(Float)
     ICA = Column(Float)
     fecha_inicio = Column(DateTime, default=datetime.now)
     fecha_final = Column(DateTime)
@@ -302,22 +300,20 @@ class Origen(Base):
         return "Origen<id= '%s', nom_origen='%s'>" %(self.id_origen, self.nom_origen)
 
 
-class MateriaDeControl(Base):
+class MaterialDeControl(Base):
     __tablename__= 'material_de_control'
     id_material = Column(Integer, primary_key=True)
     nom_material = Column(String)
     
 
-if __name__ == '__main__':
+class Certificado(Base):
+    __tablename__= 'certificado'
+    id_certificado = Column(Integer, primary_key=True)
+    id_muestra = Column(Integer, ForeignKey("muestra.id_muestra"))
+    fecha_creacion =  Column(DateTime, nullable=False,default= datetime.now)
+    ultima_descarga = Column(DateTime)
+    aprueba =  Column(Integer, ForeignKey("miembro_rodam.id_miembro"))
 
-    session = Session()
-    # print(Empresa.__table__)
-    try:
-        Base.metadata.create_all(eng)
-        session.commit()
-    except Exception as e:
-        print("ocurrió una excepcion:")
-        print(e)
-    else:
-        print("SQL corrió sin problemas")
+    def __repr__(self):
+        return "Certificado<id= '%s', muestra= '%s'>" % (self.id_certificado, self.id_muestra)
 
