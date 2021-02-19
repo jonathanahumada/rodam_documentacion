@@ -2,14 +2,16 @@
 
 rectangle "Ingreso de inventario" {
 
-:Miembro Rodam: --> (Ingresar Origen) 
-:Miembro Rodam: --> (Ingresar Sector)
-:Miembro Rodam: --> (Ingresar Equipos)
-:Miembro Rodam: --> (Ingresar Ciudad) 
-:Miembro Rodam: --> (Ingresar Cliente)
-:Miembro Rodam: --> (Ingresar Empresa)
-:Miembro Rodam: --> (Ingresar Cargos)
-:Miembro Rodam: --> (Materiales Controlados)
+:Director de la información: --> (Ingresar Origen) 
+:Director de la información: --> (Ingresar Sector)
+:Director de la información: --> (Ingresar Cargos)
+:Director de la información: --> (Ingresa Miembro Rodam)
+:Director de la información: --> (Asigna cargos)
+:Persona de Ingreso: --> (Ingresar Ciudad) 
+:Persona de Ingreso: --> (Ingresar Cliente)
+:Persona de Ingreso: --> (Ingresar Empresa)
+:Director de calidad: --> (Ingresar Equipos)
+:Director de calidad: --> (Ingresar Materiales Controlados)
 }
 
 

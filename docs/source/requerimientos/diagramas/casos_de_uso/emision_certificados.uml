@@ -4,11 +4,10 @@ skinparam actorStyle awesome
 
 
 
-
 rectangle "Emisión de certificados" {
-:Miembro Rodam: --> (Generar certificado)
-:Miembro Rodam: --> (Generar Factura)
-:Cliente rodam: --> (Generar certificado)
+:Persona de Contabilidad: --> (Generar Factura)
+:Miembro Rodam: --> (Genera Certificado)
+:Cliente rodam: --> (Descarga  certificado)
 }
 
 

@@ -5,7 +5,10 @@ skinparam actorStyle awesome
 
 rectangle "Recoleccion de resultados" {
 :Microbiólogo: --> (Registra Lectura)
+:Miembro Rodam: --> (Verifica lectura) 
 :Microbiólogo: --> (Compara con especificación)
-}
+:Microbiólogo: --> (Aprueba Muestra)
+:Miembro Rodam: --> (Verifica muestra)
+} 
 
 @enduml 

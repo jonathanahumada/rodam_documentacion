@@ -3,7 +3,8 @@
 skinparam actorStyle awesome
 
 rectangle "Control de calidad" {
-:Microbiógo: --> (Registra control de material)
+:Microbiólogo: --> (Registra control de material)
+:Director de Calidad: --> (Registra control de material)
 }
 
 @enduml

@@ -1,8 +1,8 @@
 @startuml
 
 rectangle "Ingreso de Catálogo" {
-:Microbiólogo: --> (Ingresar Método) : puede
-:Microbiólogo: --> (Ingresar Análisis) : puede
-:Microbiólogo: --> (Configurar grupos) : puede
+:Director de calidad: --> (Ingresar Método) : puede
+:Director de calidad: --> (Ingresar Análisis) : puede
+:Director de calidad: --> (Configurar grupos) : puede
 
 @enduml
