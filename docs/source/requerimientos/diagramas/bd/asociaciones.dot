@@ -47,21 +47,7 @@ subgraph cluster_recoleccion_resultados {
 	
 
 }
-// participa -- especificacion [label=1]
-// grupo -- participa [label="1"]
-// grupo -- asociado [label= "n"]
-// grupo -- agrupa [label="n"]
-// agrupa -- análisis [label="n"]
 
-// asociado -- producto [label= "n"]
-// producto -- participa [label="1"]
-// análisis -- participa [label="1"]
-// análisis -- compuesto [label= "1"]
-// compuesto -- método   [label="n"]
-// método -- participa   [label="1"]
-// especificacion -- tiene [label="1"]
-// tiene --  lectura [label="1"]
- 
  
 label = "Relaciones muchos a muchos como asociaciones binarias";
 fontsize=20;

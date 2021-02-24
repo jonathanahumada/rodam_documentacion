@@ -1,0 +1,13 @@
+@startwbs
+* Diseño
+** Casos de uso
+*** Vistas por caso de uso
+*** Consultas por caso de uso
+** Arquitectura
+*** autenticación
+***  logs
+** Control de calidad
+*** pruebas
+*** excepciones
+*** validación
+@endwbs

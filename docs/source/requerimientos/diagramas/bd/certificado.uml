@@ -1,0 +1,49 @@
+
+graph Certificado{
+{
+ ranksep=5;
+ root= especificacion;
+ node [shape=box];
+ muestra  [label="Muestra"];
+ certificado  [label="Certificado"];
+ lectura  [label="Lectura"];
+ miembro_rodam [label="Miembro Rodam"];
+ producto [label="Producto"];
+ 
+}
+
+{
+
+ ranksep=5;
+ node [shape=diamond, style=filled];
+ 
+ tiene;
+ aparece_en [label="aparece en"];
+ aprueba [label="aprueba"];
+ de;
+
+}
+
+primera_creacion [label="primera creación"];
+num_factura [label="número de factura"]
+
+muestra -- tiene [label="1"]
+tiene -- lectura [label="n"]
+muestra -- de [label="n"]
+de -- producto  [label="1"]
+muestra -- aparece_en [label="1"]
+aparece_en -- certificado [label="1"]
+certificado -- id
+certificado -- descargas
+certificado -- primera_creacion
+certificado -- num_factura
+certificado -- aprueba
+aprueba -- miembro_rodam [label="1"]
+
+
+
+
+ 
+label = "Certificado y muestra";
+fontsize=20;
+}

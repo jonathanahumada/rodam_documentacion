@@ -104,7 +104,7 @@ sino de relaciones entre ellos, de la siguiente manera:
 
 
 
-Así, mismo, una lectura se compone por :
+Así, mismo, una lectura se compone por:
 
 
 
@@ -113,7 +113,13 @@ Así, mismo, una lectura se compone por :
 
 
 
+Emision de certificados
+=======================
+
+Aquí se muestra la relación que tiene un certificado con las demás entidades.
 
 
+.. image:: ../assets/certificado.png
+   :align: center
 
 
