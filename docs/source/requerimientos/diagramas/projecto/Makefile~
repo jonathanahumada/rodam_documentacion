@@ -1,0 +1,10 @@
+mover : lectura asociaciones especificacion
+	mv lectura.png asociaciones.png especificacion.png certificado.png  /Volumes/Polyphemus/jaumaf/.devs/docs-laboratorio/docs/source/assets/
+cronograma : 
+	plantuml cronograma.uml  
+
+wbs :
+	plantuml wbs.uml
+
+
+

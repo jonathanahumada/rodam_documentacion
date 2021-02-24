@@ -1,23 +1,33 @@
 @startwbs
 * Diseño
 ** Casos de uso
-*** Vistas por caso de uso
-**** Inventario
-**** Catálogo
-**** Ingreso de Muestras
-**** Recolección de resultados
-**** Control de calidad
-**** Emisión de certificados
-
+*** Inventario
+****[#pink] mostrar solo parte del admin según permisos
+****[#pink] asegurar que director pueda destionar otros miembros
+****[#pink] representación en string de objetos no es __repr__
+*** Catálogo
+****[#pink] interfaz intuitiva para asociar grupos 
+*** Ingreso de Muestras
+****[#blue] ingreso de producto requiere varias validaciones
+*** Recolección de resultados
+****[#pink] como llenar un formulario POST como si fuera una tabla
+*** Control de calidad
+*** Emisión de certificados
+****[#pink] generar pdf 
 *** Consultas por caso de uso
 ** Arquitectura
-*** autenticación
+*** sistema de autenticación
+**** extender usuario Django con MiembroRodam
+**** asignar permisos según Cargo
 ***  logs
 *** separación en modulos (django apps)
+**** decidir entre submodulos o ajustarse a Django
 ** Frontend
 *** css global
+**** escribir base.css
 ** Control de calidad
 *** pruebas
+**** decidir casos críticos
 *** excepciones
 *** validación
 ** Despliege

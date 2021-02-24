@@ -6,11 +6,26 @@
 Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
 ===========================================================
 
+Estimaciones
+------------
+
+.. image:: ./assets/cronograma.png
+   :align: center
+
+
+
+WBS
+---
+
+.. image:: ./assets/wbs.png
+   :align: center
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   /requerimientos/documento_proyecto
    /requerimientos/srs
    /requerimientos/SDD
    /requerimientos/laboratorio_aceptacion
