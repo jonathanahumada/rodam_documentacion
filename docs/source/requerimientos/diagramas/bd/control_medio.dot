@@ -1,0 +1,120 @@
+
+graph controlDeMedios{
+{
+ ranksep=5;
+ node [shape=box];
+ regulado [label="regulado por", shape=Mdiamond, style= filled];
+ asignan [shape=Mdiamond, style = filled];
+ se_especifica [label="se especifica para",shape= Mdiamond, style = filled ];
+ utiliza [shape = Mdiamond, style = filled]; 
+ registra [shape = Mdiamond, style = filled];
+ material [label="Tipo de Material (o Medio)"]
+ cuadro [label="Cuadro de Control"]
+ metodo_control [label="Método de Control"]
+ materialDeControl [label="Material de Control"]
+ asignan [label="le asignan"]
+}
+{
+node [shape=Mdiamond, style= filled]
+pertenece
+}
+
+subgraph cluster_catalogo {
+	label = "Control De Medios"
+	node [shape=box]
+
+subgraph cluster_inventario{
+	label = "Inventario"
+	node [shape=box]
+	metodo -- utiliza [label= n]
+	utiliza -- material [label = 1]
+        material -- pertenece [label = 1 ]
+ 
+subgraph cluster_medio{
+label = "Lotes particulares"
+
+{
+node [shape = oval]
+fecha_ingreso
+estado_lote [label="estado del lote"]
+num_lote [label="número de lote"]
+resultado
+fecha_lectura [label="fecha de la lectura"]
+
+}
+
+{
+node [shape= box]
+lote_material [label="Lote de material"]
+lectura_control [label="Lectura de control"]
+}
+
+{
+node [shape= Mdiamond, style=filled]
+registra_ingreso [label="registra ingreso"]
+necesita [label="se valida con"] 
+registra_lectura [label="registra"]
+}
+
+pertenece -- lote_material [label = n]
+lote_material -- fecha_ingreso
+lote_material -- registra_ingreso [label=n]
+lote_material -- estado_lote
+lote_material -- num_lote
+lote_material -- necesita [label=1]
+necesita -- lectura_control [label = n]
+lectura_control -- resultado
+lectura_control -- fecha_lectura
+lectura_control -- registra_lectura
+registra_lectura -- MiembroRodam
+}
+
+}
+
+
+
+
+registra_ingreso -- MiembroRodam [label= 1]
+
+
+{
+node [shape=oval]
+nombre;
+especificacion;
+descripcion
+fecha_creacion [label="fecha creacion"]
+}
+	material -- regulado [label=1] 
+	regulado -- cuadro [label= n]
+	cuadro -- asignan [label = 1]
+	cuadro -- fecha_creacion
+	cuadro -- descripcion
+	cuadro -- registra [label = n]
+	registra -- MiembroRodam [label=1]
+	asignan -- metodo_control [label =n]
+	metodo_control -- nombre 
+	metodo_control -- se_especifica [label= 1]
+	se_especifica -- materialDeControl [label =1]
+	metodo_control -- especificacion 
+}
+
+subgraph cluster_recoleccion{
+ label="Recolección de resultados"
+ {
+node [shape=box]
+lectura 
+
+} 
+{
+node [shape=diamond, style=filled]
+necesita_material [label="necesita tener"]
+}
+
+}
+
+lote_material -- necesita_material [label=1]
+necesita_material  -- lectura [label=1]
+
+label = "Estructura del control de medios";
+fontsize=20;
+}
