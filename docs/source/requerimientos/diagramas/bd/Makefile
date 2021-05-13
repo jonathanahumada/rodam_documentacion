@@ -1,5 +1,5 @@
-mover : lectura asociaciones especificacion
-	mv lectura.png asociaciones.png especificacion.png certificado.png  /Volumes/Polyphemus/jaumaf/.devs/docs-laboratorio/docs/source/assets/
+mover : lectura asociaciones especificacion certificado control_medio
+	mv *.png  /Volumes/Polyphemus/jaumaf/.devs/docs-laboratorio/docs/source/assets/
 lectura : 
 	dot -Tpng lectura.dot  > lectura.png
 
@@ -11,3 +11,6 @@ especificacion :
 
 certificado :
 	dot -Tpng certificado.uml > certificado.png
+
+control_medio :
+	dot -Tpng control_medio.dot > control_medio.png

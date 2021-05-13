@@ -33,17 +33,3 @@ priorizaba  la agilización del proceso de análisis del laboratorio. Para mayor
 información ver la *Especificación de Requerimientos* para el **Módulo Laboratorio**.
 
 
-Estimaciones
-------------
-
-.. image:: ../assets/cronograma.png
-   :align: center
-
-
-
-WBS
----
-
-.. image:: ../assets/wbs.png
-   :align: center
-

@@ -20,6 +20,12 @@ Aquí se documenta el diseño del módulo *laboratorio*.  Para ver qué
 funcionalidades debe cumplir, se debe revisar la *Especificación de
 Requerimientos*.
 
+Guia conceptual
+===============
+.. image:: ../assets/proceso_laboratorio.png
+   :align: center
+
+
 
 Diseño de base de datos
 =======================
@@ -111,6 +117,11 @@ Así, mismo, una lectura se compone por:
 .. image:: ../assets/lectura.png
    :align: center
 
+
+El control de calidad
+=====================
+.. image:: ../assets/control_medio.png
+   :align: center
 
 
 Emision de certificados

@@ -1,0 +1,14 @@
+@startuml
+saturday are closed
+sunday are closed
+
+Project starts 2021-04-29
+[Control de calidad] lasts 4 days
+[Conexión con certificados] lasts
+[Capa JS y arréglo de problemas]
+[Despliege]
+
+
+
+
+@enduml
