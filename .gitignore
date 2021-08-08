@@ -3,6 +3,9 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# los archivos que tengo para vista rapida
+Brandbook/
+Fuentes y logos de RODAM/
 # Node artifact files
 node_modules/
 dist/
