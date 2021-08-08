@@ -4,10 +4,10 @@ graph controlDeMedios{
  ranksep=5;
  node [shape=box];
  regulado [label="regulado por", shape=Mdiamond, style= filled];
- asignan [shape=Mdiamond, style = filled];
+ asignan [shape=diamond, style = filled];
  se_especifica [label="se especifica para",shape= Mdiamond, style = filled ];
- utiliza [shape = Mdiamond, style = filled]; 
- registra [shape = Mdiamond, style = filled];
+ utiliza [shape = diamond, style = filled]; 
+ registra [shape = diamond, style = filled];
  material [label="Tipo de Material (o Medio)"]
  cuadro [label="Cuadro de Control"]
  metodo_control [label="Método de Control"]
@@ -15,7 +15,7 @@ graph controlDeMedios{
  asignan [label="le asignan"]
 }
 {
-node [shape=Mdiamond, style= filled]
+node [shape=diamond, style= filled]
 pertenece
 }
 
@@ -40,6 +40,8 @@ estado_lote [label="estado del lote"]
 num_lote [label="número de lote"]
 resultado
 fecha_lectura [label="fecha de la lectura"]
+num_uso [label="número de usos"]
+artefactos  [label="artefactos producidos"]
 
 }
 
@@ -50,22 +52,31 @@ lectura_control [label="Lectura de control"]
 }
 
 {
-node [shape= Mdiamond, style=filled]
+node [shape= diamond, style=filled]
 registra_ingreso [label="registra ingreso"]
 necesita [label="se valida con"] 
 registra_lectura [label="registra"]
+verifica_calidad [label="verifica calidad"]
+segun
 }
+
 
 pertenece -- lote_material [label = n]
 lote_material -- fecha_ingreso
 lote_material -- registra_ingreso [label=n]
 lote_material -- estado_lote
 lote_material -- num_lote
+lote_material -- num_uso
+lote_material -- artefactos
 lote_material -- necesita [label=1]
+lote_material -- verifica_calidad
+verifica_calidad -- MiembroRodam
 necesita -- lectura_control [label = n]
 lectura_control -- resultado
 lectura_control -- fecha_lectura
 lectura_control -- registra_lectura
+lectura_control -- segun 
+segun -- metodo_control
 registra_lectura -- MiembroRodam
 }
 

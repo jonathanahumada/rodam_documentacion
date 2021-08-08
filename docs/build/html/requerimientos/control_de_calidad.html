@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de Calidad &#8212; documentación de Módulo Laboratorio : Rodam Análisis - 0.0</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="control-de-calidad">
+<h1>Control de Calidad<a class="headerlink" href="#control-de-calidad" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">author</dt>
+<dd class="field-odd"><p>Jonatan Ahumada Fernández</p>
+</dd>
+<dt class="field-even">contact</dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:jaumaf&#37;&#52;&#48;hotmail&#46;com">jaumaf<span>&#64;</span>hotmail<span>&#46;</span>com</a></p>
+</dd>
+<dt class="field-odd">date</dt>
+<dd class="field-odd"><p>último build el 2021-05-14</p>
+</dd>
+</dl>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="descripcion-general">
+<h2>Descripción General<a class="headerlink" href="#descripcion-general" title="Enlazar permanentemente con este título">¶</a></h2>
+<img alt="../_images/inventario.png" class="align-center" src="../_images/inventario.png" />
+<img alt="../_images/catalogo.png" class="align-center" src="../_images/catalogo.png" />
+<img alt="../_images/ingreso_muestras.png" class="align-center" src="../_images/ingreso_muestras.png" />
+<img alt="../_images/control_calidad.png" class="align-center" src="../_images/control_calidad.png" />
+<img alt="../_images/recoleccion_resultados.png" class="align-center" src="../_images/recoleccion_resultados.png" />
+<img alt="../_images/emision_certificados.png" class="align-center" src="../_images/emision_certificados.png" />
+<div class="section" id="dependencias-secuenciales">
+<h3>Dependencias secuenciales<a class="headerlink" href="#dependencias-secuenciales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las dependencias secuenciales de los casos de
+uso muestran qué funcionalidades dependen de que otras se hayan
+ejecutado previamente. Por ejemplo, ingresar un análisis depende de que
+haya métodos que agregar en ese análisis.</p>
+<p>Esta visualización es útil para diseñar el flujo de eventos de una
+interfáz de usuario.</p>
+<img alt="../_images/dependencias_secuenciales.png" class="align-center" src="../_images/dependencias_secuenciales.png" />
+</div>
+<div class="section" id="requisitos-no-funcionales">
+<h3>Requisitos no funcionales<a class="headerlink" href="#requisitos-no-funcionales" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li><p>portal web debe ceñirse a libro de marca</p></li>
+<li><p>la pagina debe ser accesible por los clientes en internet y no presentar demoras de más de 1 minuto al cargar la página</p></li>
+<li><p>asegurar la integridad de los datos (backups, logs) regulares por semana.</p></li>
+<li><p>implementar un sistema de roles y permisos (confidencialidad)</p></li>
+<li><p>se deben segur las guias de GAMP</p></li>
+</ul>
+</div>
+<div class="section" id="requisitos-detallados">
+<h3>Requisitos detallados<a class="headerlink" href="#requisitos-detallados" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="autenticar-usuario">
+<h4>1. autenticar usuario<a class="headerlink" href="#autenticar-usuario" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Al ingresar a la url del sitio web hay una vista para
+autenticarse. No es necesario registrarse a la página
+pues el Director de la información se encarga de
+ingresar nuevos usuarios.</p>
+<p>Una vez el usuario se autentica. Se le muestra un
+dashboard. El dashboard mostrará unicamente
+las acciones que ese tipo de usuario tiene permitodos.
+(Ver casos de uso)</p>
+<div class="section" id="flujos-alternos">
+<h5>Flujos alternos<a class="headerlink" href="#flujos-alternos" title="Enlazar permanentemente con este título">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Si las credenciales son invalidas se deberá redirigir a la pagina de login y el formulario debe
+indicar que se incurrío en un error de validación. Basta con reportar un solo tipo de error (no hay que diferenciar error de usuario o contraseña o permitir registro), ya que
+la responsabilidad recaera en el director de la información de pasar los datos correctamente de  manera interna en el laboratorio.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="ingresar-muestra">
+<h4>2. ingresar muestra<a class="headerlink" href="#ingresar-muestra" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>La persona de ingreso accede a la url. Se autentica.
+Luego, en el dashboard selecciona “Ingreso de muestras”.</p>
+<p>Se le muestra el formulario muestras que consta de los siguientes campos:</p>
+<ul class="simple">
+<li><p>id_origen : combo box seleccionable</p></li>
+<li><p>presentacion : combo box seleccionable</p></li>
+<li><p>lote_muestra : campo de entrada de texto. Se debe validar siempre un valor numérico</p></li>
+<li><p>ingreso_muestra : La fecha del ingreso de la muestra</p></li>
+<li><p>descripcion : un text area</p></li>
+<li><p>tamano_muestra : campo numero</p></li>
+<li><p>unidades_tamano: campo de texto</p></li>
+</ul>
+<p>El usuario diligencia todos y cada uno de los campos.</p>
+<div class="section" id="id1">
+<h5>Flujos alternos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Si hay problemas de validación la página redirige a sí misma con
+los datos del POST y las validacioes pertinentes</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="control-de-los-medios">
+<h4>3. control de los medios<a class="headerlink" href="#control-de-los-medios" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>El director de calidad selecciona “control de los medios” en su dashboard.
+Una vista le muestra las muestras que aún no cuentan con un control hecho.
+En la lista de muestras hay una columna con un enlace que redirige al formulario
+detalle de control de calidad. Cuando se da click, redirige al formulario. Este
+consta de los siguientes campos:</p>
+<ul class="simple">
+<li><p>lote_material : textfield. Valida entrada numerica</p></li>
+<li><p>id_material_de_control : Combobox seleccionable que muestra no el id, sino el nombre,</p></li>
+<li><p>lote_material_de_control : textfield. Valida entrada numerica</p></li>
+<li><p>especificacion :  textfield</p></li>
+<li><p>resultado : textfield</p></li>
+<li><p>fecha_resultado : datepicker</p></li>
+<li><p>concepto : textarea</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Si hay problemas de validación la página redirige a sí misma con
+los datos del POST y las validacioes pertinentes</p></li>
+</ol>
+<img alt="../_images/control_calidad_proto.png" class="align-center" src="../_images/control_calidad_proto.png" />
+<img alt="../_images/control_calidad_proto2.png" class="align-center" src="../_images/control_calidad_proto2.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Módulo Laboratorio : Rodam Análisis</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="srs.html">Documento de Especificación de Requerimientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SDD.html">Documento de Diseño</a></li>
+<li class="toctree-l1"><a class="reference internal" href="laboratorio_aceptacion.html">Prueba de aceptación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diccionario_datos.html">Diccionario de datos</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Jonatan Ahumada Fernández.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/requerimientos/control_de_calidad.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
