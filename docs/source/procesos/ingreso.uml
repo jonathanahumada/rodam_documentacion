@@ -19,6 +19,6 @@ else (no)
 #red:no se ha determinado qué pasa con el cuadro;
 endif
 
-
+stop
 
 @enduml

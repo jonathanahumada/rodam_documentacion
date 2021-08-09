@@ -1,0 +1,4 @@
+tabla de lecturas
+id. especificacion,análisis,método,medio del método,grupo,material de control,especificación,id. lectura,resultado,fecha del resultado,responsable resultado,cumple especificaciones,lote de medio utilizado,observaciones,id,producto,cuadro analitico,origen,presentacion,lote,tamaño,estado
+1,analisis de prueba,metodo0,Medio de prueba,Grupo de prueba,Material de prueba,Entre 50 y 140 ufc,1,100 ufc,"08/06/2021, 11:00:07",Fulano aClBplefSivI,True,Lote LOTEfKFmVyKa de Tipo de medio de prueba,Este lectura fue creada con fines de prueba,1,producto de prueba,Cuadro analítico de prueba,origen0,forma genérica x 20 tabletas,1241,0.12g,estado0
+Este documento no constituye un certificado de emisión oficial

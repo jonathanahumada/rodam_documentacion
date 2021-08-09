@@ -761,13 +761,13 @@ momento de reflexión
 
 
 - hay que cambiar el fulano nadies por algo progresivo
-s
-- la lectura de control tambien hay que localizarla manualmente
+s [x]
+- la lectura de control tambien hay que localizarla manualmente []
 
 Thu Jul 29 11:48:27 -05 2021
 ===============================
 
-- ahora hay que setear este enironment variable
+- ahora hay que setear este enironment variable []
 
   .. code-block:: python
    
@@ -785,7 +785,7 @@ hoy:
 
 - terminar con el test del reporter [x]
 - explorar diferencia entre factories y stubs [x]
-- disenar el pdf reporter []
+- disenar el pdf reporter [x]
 
 vamos ...
 
@@ -885,9 +885,9 @@ miércoles,  4 de agosto de 2021
 jueves,  5 de agosto de 2021
 ==============================
 - necesito agilidad así que por ahora omitiré lo del formato
-- en los reportes de la muestra no encuentor al cliente
-- le hice un cambio al adaptor, revisar con los tests
-- se me salió el corazón y era que habia importado el testcase de unittest y no de django.tests entonces estaba destruyendo mi base de datos
+- en los reportes de la muestra no encuentor al cliente [ ]
+- le hice un cambio al adaptor, revisar con los tests [ ]
+- se me salió el corazón y era que habia importado el testcase de unittest y no de django.tests entonces estaba destruyendo mi base de datos []
 - se me ocurrio de golpe poner la bandera de exportar en el metodo o incluso en el analisis
 
 viernes,  6 de agosto de 2021

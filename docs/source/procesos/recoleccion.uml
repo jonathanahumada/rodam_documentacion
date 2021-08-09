@@ -7,4 +7,5 @@ repeat:seleccionar cada especificacion;
 backward: puede enmendar **algunos** datos de la lectura;
 repeat while (quedan especificaciones sin lectura?) 
 : la muestra solicita aprobación final;
+stop
 @enduml

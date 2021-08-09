@@ -12,7 +12,5 @@ end split
 backward :puede cambiar concepto;
 repeat while (director emite la muestra?)
 : es marcada como lista para facturacion;
-
-
-end
+stop
 @enduml

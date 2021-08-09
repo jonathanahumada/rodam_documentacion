@@ -1,0 +1,9 @@
+@startuml
+:la lectura no cunmple especificacion
+:se hace una nueva lectura según la misma especificacion
+if (la lectura esta vez cumple?) then
+:la especificacion queda con 2 lecturas
+else
+#red: hay que definirlo
+end
+@enduml

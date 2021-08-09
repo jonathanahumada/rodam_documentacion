@@ -1,0 +1,12 @@
+@startuml
+:la lectura no cumple especificación;
+:se hace una nueva lectura según la misma especificacion;
+if (¿nueva lectura cumple?) then (sí)
+:la especificacion queda con 2 lecturas;
+else (no)
+#red: hay que definirlo;
+stop;
+endif
+:se remite lectura a emisión;
+stop
+@enduml
