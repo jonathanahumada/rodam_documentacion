@@ -1,6 +1,7 @@
+BUILD_DIR=./build/
 
 mover : inventario catalogo muestra resultados emision calidad dependencias
-	mv inventario.png catalogo.png ingreso_muestras.png recoleccion_resultados.png emision_certificados.png  control_calidad.png dependencias_secuenciales.png  /Volumes/Polyphemus/jaumaf/.devs/docs-laboratorio/docs/source/assets
+	mv inventario.png catalogo.png ingreso_muestras.png recoleccion_resultados.png emision_certificados.png  control_calidad.png dependencias_secuenciales.png $(BUILD_DIR) 
 
 inventario :
 	plantuml inventario.uml

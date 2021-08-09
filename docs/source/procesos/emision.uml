@@ -1,0 +1,18 @@
+@startuml
+|emision|
+start
+repeat :la muestra solicita aprobacion final;
+split
+: exporta lecturas;
+split again
+: exporta medios;
+split again;
+#red: falso positivo o negativo?;
+end split
+backward :puede cambiar concepto;
+repeat while (director emite la muestra?)
+: es marcada como lista para facturacion;
+
+
+end
+@enduml

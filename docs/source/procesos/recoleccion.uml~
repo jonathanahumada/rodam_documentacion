@@ -1,0 +1,16 @@
+@startuml
+|recoleccion|
+start
+
+repeat:seleccionar cada especificacion;
+:ingresar lectura;
+
+backward: puede enmendar _algunos_ datos de la lectura;
+repeat while (quedan especificaciones sin lectura?) 
+: la muestra solicita aprobación final);
+
+
+
+
+
+@enduml

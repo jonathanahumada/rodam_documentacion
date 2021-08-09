@@ -1,0 +1,24 @@
+@startuml
+|ingreso|
+start
+:indicar analisis dentro del cuadro;
+repeat:seleccionar cada analisis;
+:especifcar cada analisis;
+
+:remitir analisis a revisión de calidad;
+backward :puede editar el cuadro analitico;
+repeat while (remite el analisis?) 
+:el cuadro es marcado como remitido (si);
+
+
+|calidad|
+if (calidad lo aprueba?) then (si)
+  :el cuadro es marcado como aprobado;
+   
+else (no)
+#red:no se ha determinado qué pasa con el cuadro;
+endif
+
+
+
+@enduml

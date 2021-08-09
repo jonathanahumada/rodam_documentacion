@@ -1,0 +1,16 @@
+@startuml
+|emision|
+start
+:la muestra solicita aprobacion final;
+split
+: exporta lecturas;
+split again
+: exporta medios;
+split again
+: da aprobacion final a la muestra
+|facturacion|
+: es marcada como lista para facturacion
+
+
+end
+@enduml
