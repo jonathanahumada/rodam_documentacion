@@ -1,0 +1,11 @@
+@startsalt
+{
+  En especificacion:
+  
+  ^Metodo^
+  ^Grupo^
+  ^Material de control^
+  [valor de la especificacion]
+  ^marca de emision^ ocultar en certificado^ mostrar última lectura en certificado^ mostrar todas las lecturas en certificado^ marcar como siembra^ marcar como resultado^
+}
+@endsalt

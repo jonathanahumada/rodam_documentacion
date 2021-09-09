@@ -1,0 +1,8 @@
+@startuml
+Muestra : id
+Muestra : lecturas
+Muestra : lote
+Muestra : etc
+Muestra : firma_emision : String hex
+
+@startuml

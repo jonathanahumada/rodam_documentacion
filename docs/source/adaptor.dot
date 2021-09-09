@@ -1,0 +1,20 @@
+digraph Adaptor {
+
+
+
+	init -> cargar_muestra;
+	cargar_muestra -> get_analsis_asignados;
+
+
+	adaptor -> especificaciones
+	adaptor -> tabla_de_especificaciones
+	adaptor -> lotes_de_medio
+	adaptor -> equipos
+	adaptor -> tabla_de_lecturas
+	adaptor -> lecturas
+
+	tabla_de_especificaciones -> especificaciones [label= "llama"]
+	lotes_de_medio -> tabla_de_lecturas [label = "llama"]
+	equipos -> tabla_de_especificaciones [label ="llama"]
+
+}
