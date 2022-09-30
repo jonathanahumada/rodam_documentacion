@@ -1,0 +1,80 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Documento del Proyecto}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}M\IeC {\'o}dulo Laboratorio}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Estimaciones}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}WBS}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Documento de Especificaci\IeC {\'o}n de Requerimientos}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Referencias a otros documentos}{3}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Descripci\IeC {\'o}n General}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Funcionalidades del sistema}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Caracterizaci\IeC {\'o}n de los casos de uso}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Dependencias secuenciales}{6}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Requisitos no funcionales}{6}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Requisitos detallados}{7}{subsection.2.3.4}
+\contentsline {subsubsection}{1. autenticar usuario}{7}{subsubsection*.3}
+\contentsline {paragraph}{Flujos alternos}{7}{paragraph*.4}
+\contentsline {subsubsection}{2. ingresar muestra}{7}{subsubsection*.5}
+\contentsline {paragraph}{Flujos alternos}{7}{paragraph*.6}
+\contentsline {subsubsection}{3. control de los medios}{7}{subsubsection*.7}
+\contentsline {chapter}{\numberline {3}Documento de Dise\IeC {\~n}o}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Guia conceptual}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o de base de datos}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}El ingreso de muestras}{11}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}El control de calidad}{13}{section.3.4}
+\contentsline {section}{\numberline {3.5}Emision de certificados}{13}{section.3.5}
+\contentsline {chapter}{\numberline {4}Plan de pruebas}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Necesidades del tipo de pruebas}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Estimaci\IeC {\'o}n de riesgos}{15}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Riesgo alto}{16}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Riesgo medio}{16}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Riesgo bajo}{16}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}La organizaci\IeC {\'o}n de las pruebas}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pruebas unitarias}{16}{section.4.5}
+\contentsline {section}{\numberline {4.6}Pruebas de integracion}{17}{section.4.6}
+\contentsline {section}{\numberline {4.7}Pruebas manuales}{17}{section.4.7}
+\contentsline {section}{\numberline {4.8}Validaci\IeC {\'o}n}{17}{section.4.8}
+\contentsline {chapter}{\numberline {5}Prueba de aceptaci\IeC {\'o}n}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Resumen}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Documentos relacionados}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Objetivo}{20}{section.5.3}
+\contentsline {section}{\numberline {5.4}Definiciones}{20}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Repaso por los casos de uso}{20}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Inicio del flujo}{20}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Configurando la sesion}{20}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Inventario}{21}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Creaci\IeC {\'o}n de Cat\IeC {\'a}logo}{24}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Creaci\IeC {\'o}n de an\IeC {\'a}lisis}{27}{section.5.6}
+\contentsline {section}{\numberline {5.7}Creaci\IeC {\'o}n de Grupos}{31}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Ingreso de Muestras}{33}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}Ingreso de un producto}{33}{section.5.8}
+\contentsline {section}{\numberline {5.9}Especificar un producto}{35}{section.5.9}
+\contentsline {section}{\numberline {5.10}Ingreso de una muestra}{43}{section.5.10}
+\contentsline {section}{\numberline {5.11}Ingreso de lectura}{43}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Control de calidad de los medios}{47}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}Emisi\IeC {\'o}n de certificados}{49}{subsection.5.11.2}
+\contentsline {section}{\numberline {5.12}Informacion del cliente}{49}{section.5.12}
+\contentsline {section}{\numberline {5.13}Informaci\IeC {\'o}n de la muestra}{50}{section.5.13}
+\contentsline {section}{\numberline {5.14}Resumen analisis}{50}{section.5.14}
+\contentsline {section}{\numberline {5.15}Equipos utilizados}{51}{section.5.15}
+\contentsline {chapter}{\numberline {6}Reporte de pruebas}{53}{chapter.6}
+\contentsline {chapter}{\numberline {7}Diccionario de datos}{59}{chapter.7}
+\contentsline {chapter}{\numberline {8}Reporte de validaci\IeC {\'o}n}{63}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introducci\IeC {\'o}n y alcance}{63}{section.8.1}
+\contentsline {section}{\numberline {8.2}Descripci\IeC {\'o}n del sistema}{63}{section.8.2}
+\contentsline {section}{\numberline {8.3}Manejo de riesgo}{64}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Riesgo 1: modelo de datos del sistema es insuficiente y/o genera inconsistencias en los datos}{64}{subsection.8.3.1}
+\contentsline {section}{\numberline {8.4}Riesgo 2: el artefacto principal, el certificado de emisi\IeC {\'o}n, es incompleto}{64}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Riesgo 3: el artefacto principal, el certificado de emisi\IeC {\'o}n, no es flexible a posteriores cambios}{64}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Riesgo 4:los datos no son accessibles o de dif\IeC {\'\i }cil interpretaci\IeC {\'o}n}{64}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Riesgo 5: los datos en los formularios no son restringidos de forma adecuada y se permiten ingresar datos err\IeC {\'o}neos o inconsecuentes}{65}{subsection.8.4.3}
+\contentsline {subsection}{\numberline {8.4.4}Riesgo 6: los requerimientos cambian a medida que se avanaza el desarrollo y se obtiene mayor informaci\IeC {\'o}n sobre las necesidades}{65}{subsection.8.4.4}
+\contentsline {subsection}{\numberline {8.4.5}Riesgo 7: cambiar los procesos de negocio que antiguamente se hac\IeC {\'\i }an con hojas de c\IeC {\'a}lculo puede dar lugar a confusiones}{65}{subsection.8.4.5}
+\contentsline {subsection}{\numberline {8.4.6}Riesgo 8: las componentes utilizados, tanto de software como de hardware, son insuficientes o presentan fallas}{65}{subsection.8.4.6}
+\contentsline {subsection}{\numberline {8.4.7}Riesgo 9: la interfaz gr\IeC {\'a}fica no es inmediatamente comprensible o est\IeC {\'e}ticamente desactualizada}{65}{subsection.8.4.7}
+\contentsline {section}{\numberline {8.5}Estrategia de validaci\IeC {\'o}n}{66}{section.8.5}
+\contentsline {section}{\numberline {8.6}Entregables}{66}{section.8.6}
+\contentsline {chapter}{\numberline {9}Scripts}{67}{chapter.9}
+\contentsline {section}{\numberline {9.1}Sincronizaci\IeC {\'o}n entre desarrollo y produccion}{67}{section.9.1}

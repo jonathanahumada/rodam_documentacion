@@ -1,0 +1,44 @@
+digraph G {
+        label="Proceso de configuración del catálogo" 
+                subgraph cluster_0 {
+
+                        style=filled;
+                        color=lightgrey;
+                        node [style=filled,color=white];
+                        crear_metodo [label="Crear un método"]
+                        crear_equipo [label="Crear un equipo"]
+                        add_equipo [label="Agregar equipos"]
+                        crear_analisis [label="Crear análisis"]
+                        agregar_metodo [label="Agregar/quitar  método"]
+                        crear_grupo  [label="Crear grupo"]
+                        agregar_grupo [label="Agregar/quitar grupo"]    
+                                label = "Ingreso";
+                        subgraph cluster_reglas_reglamentacion {
+                                label="Reglas"
+                                rankdir="TB"
+
+                                        node [style=filled,color=white, shape=ssquare, ];
+                        posterior [label="Grupos se usarán en especificacion"]
+                        }
+
+                }
+
+        
+
+
+
+        crear_equipo -> add_equipo 
+        crear_metodo -> add_equipo [label="vista detalle"]
+        crear_analisis -> crear_grupo
+        crear_grupo -> agregar_grupo
+        crear_metodo -> agregar_metodo
+        crear_analisis -> agregar_metodo
+        crear_analisis -> agregar_grupo
+        agregar_metodo -> agregar_grupo [label="vista detalle"]
+        agregar_grupo -> agregar_metodo [label="vista detalle"]
+        
+
+                end [shape=Msquare, label="Fin"];
+
+        crear_grupo -> end
+}

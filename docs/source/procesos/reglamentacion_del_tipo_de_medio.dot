@@ -1,0 +1,32 @@
+digraph G {
+   label="Proceso de Reglamentación del tipo de medio"
+  subgraph cluster_0 {
+    
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    a0 [label="Ingresar Tipo de Medio"]
+    a1 [label="Crear cuadro de control"]
+    a2 [label="Agregar métodos de control"]
+    a3 [label="Marcar el cuadro como listo"]
+    a0 -> a1 -> a2 -> a3 ;
+    label = "Calidad";
+ subgraph cluster_reglas_reglamentacion {
+        label="Reglas"
+ 
+    node [style=filled,color=white, shape=ssquare, ];
+    r3 [label="Cuando el cuadro está listo. No se puede editar"] 
+    
+  
+  }
+  
+  }
+
+
+
+
+ 
+  end [shape=Msquare, label="Fin"];
+
+  a3 -> end
+}

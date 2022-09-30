@@ -1,0 +1,62 @@
+digraph G {
+   label="Proceso de Preparación del lote medio"
+  subgraph cluster_0 {
+    
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    a0 [label="Ingresar Lote de Medio"]
+    a1 [label="Remitir a Recolección"]
+    a2 [label="Aprobar Lecturas de control"]
+    a0 ->   a1 ;
+    label = "Calidad";
+    
+      subgraph cluster_reglas_calidad {
+        label="Reglas"
+ 
+    node [style=filled,color=white, shape=ssquare, ];
+    r0  [label="Lote se asocia a un cuadro de control listo"]
+    r2 [label="Lote remitido no es editable"]   
+    
+  
+  }
+  
+  }
+
+  subgraph cluster_1 {
+    label = "Recolección";
+    color=lightgrey
+    style=filled;
+    node [style=filled, color=white];
+    
+    b0 [label="Ingresar lecturas de control"]
+    b1 [label="Solicitar aprobación de lecturas"]
+    b0 -> b1;
+    
+subgraph cluster_reglas_recoleccion {
+        label="Reglas"
+ 
+    node [style=filled,color=white, shape=ssquare, ];
+    r1 [label="Tener especificaciones completas"]
+    r3 [label="Luego solicitar aprobación no se puede ingresar más lecturas"] 
+    
+  
+  }
+    
+    
+ 
+  }
+  
+  
+  
+  a1 -> b0
+    b1 -> a2
+  
+
+
+  
+  end [shape=Msquare, label="Fin"];
+  
+
+  a2 -> end
+}

@@ -22,7 +22,7 @@ copyright = '2021, Jonatan Ahumada Fernández'
 author = 'Jonatan Ahumada Fernández'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------

@@ -1,0 +1,54 @@
+digraph G {
+        label="Proceso de Reglamentación del cuadro analítico"
+                subgraph cluster_0 {
+
+                        style=filled;
+                        color=lightgrey;
+                        node [style=filled,color=white];
+                        a0 [label="Crear un cuadro analítico"]
+                                a1 [label="Editar cuadro"]    
+                                a2 [label="Remitir cuadro"]
+
+                                label = "Ingreso";
+                        subgraph cluster_reglas_reglamentacion {
+                                label="Reglas"
+                                rankdir="TB"
+                                        node [style=filled,color=white, shape=ssquare, ];
+                                r1 [label="El cuadro se asocia a un producto"]
+                                        r2 [label="Cuadro remitido tiene que estar especificado"]
+                                r4[label="Editar requiere permiso de edicion"]
+                                r5[label="Editar requiere estar en estado 'sin remitir'"]
+                                r10[label="Pero dir. calidad puede editar cuadros remitidos"]
+                                r6[label="Remitir cuadro requiere permiso de remisión"]
+                                r9[label="Remitir cuadro requiere estar en estado 'sin remitir'"]
+                        }
+
+                }
+
+        subgraph cluster_caldad{
+                style=filled;
+                color=lightgrey;
+                node [style=filled,color=white];
+                a3 [label="Aprobar cuadro"]
+                        label = "Calidad"
+                        subgraph cluster_reglas_calidad {
+                                label="Reglas"
+
+                                        node [style=filled,color=white, shape=ssquare, ];
+                                r3 [label="Un cuadro aprobado no puede ser modificado"]
+                                r7[label="Aprobar cuadro requiere permiso de remision"]
+                                r8[label="Aprobar cuadro requiere estar en estado 'remitido'"]
+
+                                
+                        }
+
+        }
+
+
+
+        a0 -> a1 -> a2 -> a3
+
+                end [shape=Msquare, label="Fin"];
+
+        a3 -> end
+}
