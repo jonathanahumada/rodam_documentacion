@@ -1,0 +1,13 @@
+@startuml
+Muestra --> CertificadoDeEmision : > muchos
+
+Muestra : las lecturas
+Muestra : el cuadro
+
+CertificadoDeEmision : datos_certificado: tuple
+CertificadoDeEmision : hash_seguridad: String
+CertificadoDeEmision : concepto_final : String
+CertificadoDeEmision : fecha_de_emision: Date
+
+note right of CertificadoDeEmision : "Representación interna del pdf"
+@enduml

@@ -1219,8 +1219,8 @@ para cambiarlo luego.
 
 
    
-- las tablas de lectura y de especificacion ya funcionan con namedtuples []
-- hay que deshacer la dependencia temporal entre las tablas y los registros []
+- las tablas de lectura y de especificacion ya funcionan con namedtuples [x]
+- hay que deshacer la dependencia temporal entre las tablas y los registros [x]
 
 jue 26 ago 2021 11:15:13 -05
 ==============================
@@ -1348,8 +1348,8 @@ Antes de avanzar. quiero hacer un diagnostico general.
 mar 31 ago 2021 15:26:10 -05
 ==============================
 
-- modelo de formato []
-- subida de firmas []
+- modelo de formato [x]
+- subida de firmas [x]
 
 
 
