@@ -6,8 +6,13 @@ Guia de Desarrollo
 :contact: jaumaf@hotmail.com
 
 
-Modificar CBV
+¿Cómo modificar Modificar CBV?
 ##############################
+Se hace por override, pero
+hay que conocer bien el orden de
+los llamados que hace la vista.
+
+
 - `get_initial`
 - `post`
 - `form_valid`
@@ -17,6 +22,10 @@ Modificar CBV
 
 Checklist para una vista
 ##############################
+Cualquier vista que se haga, necesita
+adicionalmente gestionar la siguiente
+funcionalidad.
+
 - permisos
 - mensajes
 - redirect
@@ -128,6 +137,7 @@ De la siguiente manera:
 
 
 **Advertencia: para que los botones inyectados se vean bien, se deben definir los estilos css manualmente.**
+
 Ejemplo
 ------------------------------
 El snippet ayuda a producir tablas así:
