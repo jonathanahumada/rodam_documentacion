@@ -1,0 +1,15 @@
+digraph G {
+label="Pasos generales"
+
+
+inputs [label="creacion de <input> para cada columna"]
+
+configuracion [label="creación de configuración"]
+
+inicializacion [label="inicializacion de datatables"]
+
+posicionamiento  [label="posicionamiento de elementos dentro del wrapper"]
+
+inputs -> configuracion -> inicializacion -> posicionamiento
+
+}

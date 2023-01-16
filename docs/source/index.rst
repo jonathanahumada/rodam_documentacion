@@ -19,6 +19,7 @@ Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
    /requerimientos/reporte_pruebas
    /requerimientos/diccionario_datos
    /requerimientos/resumen_validacion
+   /desarrollo/guia
    /operaciones/scripts
 
    
