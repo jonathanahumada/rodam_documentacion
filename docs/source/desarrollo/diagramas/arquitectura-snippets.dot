@@ -1,0 +1,19 @@
+digraph G {
+label="Arquitectura snippets"
+
+
+vista -> template
+	subgraph cluster_templating {
+	label=""
+	// para marcar barrera arquitectonica
+	
+	style=filled;
+	color=lightgrey;
+	
+	template -> snippet [label="incluye"]
+	template -> script  [label="define"]
+	script -> snippet [label="utiliza"]
+	}
+
+
+}
