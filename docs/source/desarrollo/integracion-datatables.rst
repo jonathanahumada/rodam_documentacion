@@ -106,3 +106,23 @@ El snippet ayuda a producir tablas así:
 Los botones integrados se ven así:
 
 .. image:: ./assets/ejemplo-integracion-datatables-botones.png
+
+
+Probelmas comunes
+------------------------------
+
+1. Cuando no hay igual número de elementos en una fila, datatables muestra una alerta en runtime
+
+.. image:: ./assets/ejemplo-alerta-columnas.png
+
+   Para evitar poner el footer a mano en el caso vació se recomienta utilizar el custom template
+   tag `filas_tbody_vacio`.
+
+.. code:: python
+
+	# dentro de una tabla 
+        {% empty %}
+	
+        {% filas_tbody_vacio 8 %}
+      
+        {% endfor %}
