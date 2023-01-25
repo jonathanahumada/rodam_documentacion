@@ -7,23 +7,17 @@ Este documento registra algunas operaciones comunes.
 Sincronización entre desarrollo y produccion
 ============================================
 
-Los ambientes de desarrollo y producción son distintos.
-Esto algunas veces puede conllevar a que las ramas
-de desarollo y producción se bifurqyen. Algunos
-cambios, denominados "en caliente", se hicieron
-directamente sobre la aplicación en el servidor de producción.
-Alguno de estos cambios luego se replicaron en desarrollo, pero algunos
-otros no.
+Los ambientes de desarrollo y producción son distintos.  Esto algunas
+veces puede conllevar a que las ramas de desarollo y producción se
+bifurquen.
 
-Más aun, lo que se replicaron fueron hechos en diferente
-orden, lo que puede o no plantear un problema para las migraciones de
-Django. Recordemos que las migraciónes de django guardan
-una referencia a su antecesor, por lo que el orden de las migraciones
-es un factor relevante a la hora de correr comandos como `manage.py migrate`
+Las migraciónes de django guardan una referencia a su antecesor, por
+lo que el orden de las migraciones es un factor relevante a la hora de
+correr comandos como `manage.py migrate`
 
-La única forma de garantizar consistencia entre las dos ramas bifurcadas
-es revisar el schema de la base de datos como tal. Algunos comandos útiles
-son:
+La única forma de garantizar consistencia entre las dos ramas
+bifurcadas es revisar el schema de la base de datos como tal. Algunos
+comandos útiles son:
 
 .. code-block::
 
@@ -90,6 +84,7 @@ reporta si se encuentran en la base de datos. La salida se ve algo así:
 		-.*****************EstadoCuadroDeControl*****************.
 		|           Proceso de ingreso           |  Encontrado   |
 		|                 En uso                 |  Encontrado   |
+
 
 llenar_estado.py
 ++++++++++++++++++++++++++++++
