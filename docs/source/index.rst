@@ -22,11 +22,8 @@ Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
    /requerimientos/emision_de_certificados
    /requerimientos/control_de_calidad
    /desarrollo/guia
-   /desarrollo/request-y-responses
-   /desarrollo/selectores
-   /desarrollo/topics
-   /desarrollo/permisos
-   /operaciones/scripts
 
    
 
+
+   

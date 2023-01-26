@@ -60,6 +60,7 @@ Este script lee los ciclos de vida descritos en los protocolos para cada entidad
 reporta si se encuentran en la base de datos. La salida se ve algo así:
 
 .. code-block:: python
+		
 		>>> from scripts import check_ciclo_de_vida
 		>>> check_ciclo_de_vida.main()
 		-.*****************EstadoCuadroAnalitico*****************.
@@ -92,6 +93,7 @@ Este script itera por el ciclo de vida de cada objeto registrado en el
 script y crea el estado *solo si este no existe previamente*. La salida se ve algo
 así 
 .. code-block:: python
+		
 	>>> from scripts import llenar_estado
 	>>> llenar_estado.main()
 	creando estado Sin remitir
