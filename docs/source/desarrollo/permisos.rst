@@ -158,6 +158,8 @@ poner con dlos decorators de `django.contrib.auth.decorators` .
 
 .. code-block:: python
 
+   from django.contrib.auth.decorators import permission_required
+
    @permission_required(f'ingreso.{EMITIR_CERTIFICADO}', raise_exception=True)
    def darAprobacionFinal(request, id_muestra):
    """Cambia estado de la muestra y produce un certificado
