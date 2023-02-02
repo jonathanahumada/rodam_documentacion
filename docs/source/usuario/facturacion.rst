@@ -2,6 +2,46 @@
 Facturación
 ##############################
 
+Muestras Aprobadas
+##############################
+
+.. list-table:: Resumen
+   :header-rows: 0
+
+   * - Area
+     - Emisión
+   * - Permisos
+     - --
+   * - Grupos
+     - --
+   * - Visibilidad
+     - 'Director de la información, 'Director de calidad', 'Asesor Contable'
+
+
+En esta vista se consultan las muestras que recién fueron aprobadas
+por el Director del laboratorio (o usuario con permisos equivalentes),
+y por consiguiente tienen estado 'Con Aprobación Final'.
+
+El objetivo de esta vista es reunir estas muestras de modo que fácilmente
+se les puede asignar un número de factura.
+
+Al presionar el botón 'Facturar', se le asigna un número de factura y las
+muestras seleccionadas cambian su estado a 'Facturada'.
+
+Suposiciones
+______________________________
+
+- la mayoría de las muestras se facturan luego de ser aprobadas
+- una vez se le asigna un número de factura la muestra cambia de estado
+
+
+Preguntas
+______________________________
+- ¿Qué pasa si deseo cambiar el numero de factura? R. Se hace desde la vista 'Muestras Facturadas' o 'Facturación Maestra'
+  
+
+
+     
 
 
 
@@ -16,7 +56,7 @@ Facturación Maestra
    * - Area
      - Emision
    * -  Permisos
-     - `muestra.facturar_desde_maestra`
+     - `muestra.facturar_desde_maestra`, `muestra.orden_de_compra_asignar`
    * - Grupos
      - 'Asesor Contable'
    * - Visibilidad
@@ -46,34 +86,10 @@ un resultado similar a este:
 .. image:: ./assets/facturacion-maestra-ejemplo-resultado.png
 
 
-.. note::
-   El comportamiento por defecto de esta vista es no cambiar el
-   estado de las muestras. Notése que la muestras afectadas retuvieron
-   su estado "Sin remitir".
-
-Cambiar el estado de las muestras
-###################################
-
-Si se desea que cuando se facture, se cambie el estado, se debe
-habilitar seleccionar primero este comportamiento desde el dropdown.
-
-.. image::
-   ./assets/facturacion-maestra-ejemplo-uso-dropdown.png
+Similarmente, el usuario tambien podrá asginar una orden de compra
+a las muestras seleccionadas.
 
 
-Ahora, si se realiza la acción facturar las muestras cambiaran a estado
-facturado independientemente de su estado anterior. Por esto mismo,
-la operación debe realizarse con mucho cuidado.
-
-Un ejemplo del resultado seria parecido a este, nótese que su estado
-cambió:
-
-.. image::
-   ./assets/facturacion-maestra-ejemplo-resultado-cambio-estado.png
-.. warning::
-   Si una muestra pasa de su estado "Sin remitir" a "Facturado"
-   no pasará por su ciclo de vida normal. Un usuario autorizado
-   deberá alterar su estado manualmente para restaurarlo.
 
 
  

@@ -8,3 +8,5 @@ Guía de usuario
    :caption: Contenido:
 
    facturacion
+   descarga-certificados
+   ordenes-de-compra
