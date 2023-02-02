@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
+Documentación de Laboratorio Web de Rodam Análisis S.A.S
 ===========================================================
 
 
@@ -11,7 +11,6 @@ Documentación de Módulo Laboratorio de Rodam Análisis S.A.S
    :maxdepth: 2
    :caption: Contents:
 
-   /requerimientos/documento_proyecto
    /requerimientos/srs
    /requerimientos/SDD
    /requerimientos/STPD
