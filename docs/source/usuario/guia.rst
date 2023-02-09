@@ -8,7 +8,4 @@ Guía de usuario
    :caption: Contenido:
 
    flujo-emision
-   facturacion
-   descarga-certificados
-   ordenes-de-compra
    permisos

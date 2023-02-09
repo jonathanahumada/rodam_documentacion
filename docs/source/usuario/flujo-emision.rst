@@ -34,9 +34,9 @@ visibles (los cilindros)
 
 .. image:: ./assets/flujo-emision.png
 
-Vistas relacionadas
+Entradas relacionadas
 ------------------------------
-Para más detalle de qué sucede en cada vista, existen
+Para más detalle de qué sucede en cada acción, existen
 otras entradas en esta guia.
 
 .. toctree::
@@ -44,6 +44,6 @@ otras entradas en esta guia.
    :caption: Relacionadas:
 
    
-   facturacion
+   facturar-muestra
    descarga-certificados
    ordenes-de-compra

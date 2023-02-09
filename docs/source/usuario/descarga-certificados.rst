@@ -4,11 +4,23 @@ Descarga de certificados
 
 Resumen
 ##############################
+.. list-table:: Resumen
+   :header-rows: 0
 
+   * - Area
+     - Emisión
+   * - Permisos
+     - `ingreso.descargar_certificado`
+   * - Grupos
+     - Director de calidad, Director del laboratorio
+
+
+Interfaces
+##############################
 La descarga de certificados se puede hacer:
 
 1. desde el Detalle de la Muestra
-2. desde la pagina Maestra de muestras a través de: exportar > certificado
+2. desde una tabla dinámica con la acción habilitada a través de: exportar > certificado. Ver :doc:`flujo-emision`. 
 
 
 Observaciones
@@ -20,18 +32,7 @@ Observaciones
 
 Exportación en bloque 
 ##############################
-.. list-table:: Resumen
-   :header-rows: 0
 
-   * - Area
-     - Emisión
-   * - Permisos
-     - --
-   * - Grupos
-     - --
-   * - Visibilidad
-     - 'Director de la información, 'Director de calidad',
-       
 Cuando se utiliza la acción exportar > certificado, la aplicación hará lo siguiente:
 
 - tomara el último certificado emitido de cada muestra seleccionada en la tabla, si este existe 

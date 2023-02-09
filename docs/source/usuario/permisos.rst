@@ -51,7 +51,7 @@ Este es un listado de los permisos utilizados en la aplicación:
 	     "change_muestra", "editar la muestra"
 	     "emitir_certificado", "aprueba y emite el certificado"
 	     "emitir_certificado", "re-emite un certificado"
-	     "descargar_certificado", "descarga certificado"ro
+	     "descargar_certificado", "descarga certificado"
 	     "cambiar_cuadro_analitico", "le asigna otro cuadro analítico a la muestra"
 	     "facturar_desde_maestra", "Puede facturar sin tener en cuenta el ciclo de vida de la muestra"
 	     "orden_de_compra_asignar", "Asigna orden de compra a muestras"
