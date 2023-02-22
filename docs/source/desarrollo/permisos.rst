@@ -176,7 +176,12 @@ poner con dlos decorators de `django.contrib.auth.decorators` .
        return redirect('emision:muestras_por_aprobacion')
 
 
+.. note::
 
+   `raise_exception=True` es necesario para que se presente la pagina 404.
+   De lo contrario, redirigirá a LOGIN_URL, independientemente de qué
+   otros decorators esten encargandose de esto.
+   
 .. note::
 
    Notese que los permisos se referencian como constantes
