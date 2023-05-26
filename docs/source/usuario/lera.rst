@@ -41,7 +41,8 @@ ver :ref:`Sobre la activación de comportamientos`.
 . Algunos ejemplos *concretos* de comportamientos se mostrarán más
 adelante en :ref:`¿Qué es la interactividad?`. Las *posibilidades* de
 un comportamiento son flexibles y variadas, pero no se discutirán en
-este documento.
+este documento. Para una referencia de los comportamientos ver
+:doc:`/requerimientos/LERA_casos`.
 
 Cada retroalimentación es individual para la lectura y tiene en cuenta
 lo escrito en la especificación y lo escrito en el dato primario.
