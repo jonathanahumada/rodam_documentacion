@@ -2,6 +2,10 @@
 CBV
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date:  primera version 2023-01-25, último build el |date|
+	  
 Las Class Based Views son un componente
 de Django muy útil, pero que rápidamente
 gana complejidad. Aquí hay algunos lineamentos

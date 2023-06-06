@@ -133,6 +133,10 @@ Comportamientos
      - transformación
      - muestra en la ui la cadena apropiada para el valor transfomrado si el dato primario es 0
      - pendiente
+   * - solo valor numérico
+     - validacion
+     - solo acepta valor numerico o palabra clave incontable
+     - pendiente
 
 `valor_numerico`
 ---------------------
@@ -201,8 +205,20 @@ Comportamientos
      - transformación
      - muestra en la ui el valor transformado poniendo el resultado con la unidad de la especificación
      - implementado
+   * - validar_coherencia_concepto
+     - validacion
+     - muestra si el concepto es coherente con la especificacion y el dato primario
+     - pendiente
+   * - validar_unidad_en_transformado
+     - validacion
+     - muestra si al resultado transformado le falta una unidad (si está en la especificación)
+     - pendiente
 
-
+   * - alertar_resultado_de_diferente_caso
+     - validación
+     - muestra cuando el resutlado no es del caso presencia_ausencia
+     - pendiente
+  
 
 `concepto_cualitativo`
 ----------------------

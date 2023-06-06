@@ -11,9 +11,13 @@ Guia de Desarrollo
 
    integracion-datatables
    especificacion-cuadros
+   LERA
+   api_comportamientos
    request-y-responses
    selectores
    topics
    permisos
+   cbv
+   ejecucion-pruebas
    /operaciones/scripts
 
