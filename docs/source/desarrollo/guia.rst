@@ -20,4 +20,5 @@ Guia de Desarrollo
    cbv
    ejecucion-pruebas
    /operaciones/scripts
+   known-bugs
 
