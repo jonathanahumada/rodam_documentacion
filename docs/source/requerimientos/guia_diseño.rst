@@ -26,8 +26,7 @@ Approaches" de Eric J. Baude y Michael Bernsetein.
    SDD
    STPD
    laboratorio_aceptacion
-   requerimientos/reporte_pruebas
-   requerimientos/diccionario_datos
+   diccionario_datos
    resumen_validacion
    emision_de_certificados
    control_de_calidad

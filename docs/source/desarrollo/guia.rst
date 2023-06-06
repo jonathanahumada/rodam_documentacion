@@ -15,7 +15,6 @@ Guia de Desarrollo
    api_comportamientos
    request-y-responses
    selectores
-   topics
    permisos
    cbv
    ejecucion-pruebas
