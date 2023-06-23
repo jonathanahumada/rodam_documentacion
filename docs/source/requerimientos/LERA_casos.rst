@@ -103,11 +103,11 @@ Comportamientos
      - implementado
    * - cumple desigualdad (dato primario)
      - validación
-     - compara *magnitud* del dato primario con *magnitud* de especificacion
+     - compara *magnitud* del dato primario con *magnitud* de especificacion y concepto
      - implementado
    * - cumple desigualdad (valor transformado)
      - validación
-     - compara *magnitud* del valor transformado con especificacion
+     - compara *magnitud* del valor transformado con especificacion y concepto
      - implementado
    * - unidad para Petri válida
      - validación
@@ -126,17 +126,30 @@ Comportamientos
      - muestra en la ui la magnitud obtenida si se le aplicara la dilución al dato primario
      - implementado
    * - limite superior
-     - transformacion
-     - muestra en ui la cadena apropiado para el valor transformado si el dato primario no se pude leer en caja de petri
-     - pendiente
-   * - limite  inferior
+     - transformación
+     - transformada 'incontable' a '< 250' si el dato primario no se pude leer en caja de petri
+     - implementado
+   * - limite inferior
      - transformación
      - muestra en la ui la cadena apropiada para el valor transfomrado si el dato primario es 0
-     - pendiente
+     - implementado
+   * - limite inferior (con dilución)
+     - transformación
+     - aplica dilución y genera la cadena apropiada para el valor transformado si el dato primario es 0
+     - implementado
    * - solo valor numérico
      - validacion
      - solo acepta valor numerico o palabra clave incontable
      - pendiente
+   * - concepto desigualdad (primario)
+     - transformación
+     - sugiere el valor del concepto teniendo en cuenta especificacion y dato primario
+     - implementado
+   * - concepto desigualdad (transformado)
+     - transformación
+     - sugiere el valor del concepto teniendo en cuenta especifacion y valor transformado
+     - implementado
+   
 
 `valor_numerico`
 ---------------------
@@ -197,6 +210,22 @@ Comportamientos
      - tipo
      - descripcion
      - estado
+   * - concepto presencia ausencia (primario)
+     - validacion
+     - muestra si la especificacion, el resultado y el concepto son coherentes
+     - implementado
+   * - concepto presencia ausencia (transformado)
+     - validación
+     - muestra si la especificacion, el valor transformado y el concepto son coherentes
+     - implementado
+   * - es presencia ausencia (primario)
+     - validacion
+     - comprueba que el caso de el dato primario es presencia ausencia
+     - implementado
+   * - es presencia ausencia (transformado)
+     - validación
+     - comprueba que el caso de el valor transformado es presencia ausencua
+     - implementado
    * - cumple_presencia_ausencia
      - transformación
      - muestra en ui el concepto apropiado según la lectura y especificación
@@ -205,19 +234,14 @@ Comportamientos
      - transformación
      - muestra en la ui el valor transformado poniendo el resultado con la unidad de la especificación
      - implementado
-   * - validar_coherencia_concepto
-     - validacion
-     - muestra si el concepto es coherente con la especificacion y el dato primario
-     - pendiente
-   * - validar_unidad_en_transformado
+   * - presencia ausencia tiene unidad
      - validacion
      - muestra si al resultado transformado le falta una unidad (si está en la especificación)
-     - pendiente
-
-   * - alertar_resultado_de_diferente_caso
-     - validación
-     - muestra cuando el resutlado no es del caso presencia_ausencia
-     - pendiente
+     - implementado
+   * - tiene valor transformado
+     - validacion
+     - si la especificacion tiene unidad, se requiere un valor transformado
+     - implementado
   
 
 `concepto_cualitativo`

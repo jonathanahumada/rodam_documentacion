@@ -45,7 +45,7 @@ funciones de ayuda. Un ejemplo sería esto:
 	{% include '../base/datatable_snippet.js' %}
 	poner_inputs_en_footer('#muestra-maestra-list');
 	// inicializo datatables
-	var datatable = init_datatable('#muestra-maestra-list', conf_inicial)
+	var datatable = init_datatable('#muestra-maestra-list', null) // null es para no pasar ninguna configuración
 	poner_botones_en_elemento(datatable.buttons().container(), '#funcionalidad-tabla')
 
 
@@ -61,7 +61,7 @@ De la siguiente manera:
 .. code-block:: js
 		
 	// dentro del <script> 
-	var conf_inicial = conf_factory('#muestra-maestra-list'); // patrón facootry
+	var conf_inicial = conf_factory('#muestra-maestra-list'); // patrón factory
 	var botones = [
 		{
 			extend: 'collection',
@@ -118,6 +118,15 @@ Probelmas comunes
    Para evitar poner el footer a mano en el caso vació se recomienta utilizar el custom template
    tag `filas_tbody_vacio`.
 
+
+   Primero se carga el templatetag
+
+.. code:: python
+	  
+	  # en el template en que será utilizado 
+	  {% load tablas %}
+
+   Luego se puede utililizar
 .. code:: python
 
 	# dentro de una tabla 
