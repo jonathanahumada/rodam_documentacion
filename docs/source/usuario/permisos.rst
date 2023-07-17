@@ -32,7 +32,8 @@ Este es un listado de los permisos utilizados en la aplicación:
 	     "aprobar_cuadroanalitico", "aprueba cuadro analitico"
 	     "remitir_lotedemedio",  "remite lote de medio para que se le hagan lecturas de control"
 	     "remitir_lotedemedio", "desaprobar lote de medio"
-	     "aprobar_lotedemedio", "aprobar lote de medio"
+	     "aprobar_lotedemedio", "aprobar lote de medio",
+	     "devolver_lecturas_lotedemedio", "Puede devolver a estado remitido",
 	     "marcar_agotamiento_lotedemedio", "marcar agotado"
 	     "solicitar_aprobacion_lotedemedio", "micriobiologia remite a calidad para que apruebe"
 	     "change_cuadrodecontrol", "editar cuadro de control"
@@ -60,4 +61,5 @@ Este es un listado de los permisos utilizados en la aplicación:
 	     "cambiar_cuadro_analitico", "le asigna otro cuadro analítico a la muestra"
 	     "facturar_desde_maestra", "Puede facturar sin tener en cuenta el ciclo de vida de la muestra"
 	     "orden_de_compra_asignar", "Asigna orden de compra a muestras"
+	     "ingresar_en_bloque", "Puede ingresar muestras en bloque"
 	     
