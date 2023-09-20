@@ -20,4 +20,5 @@ Guia de Desarrollo
    ejecucion-pruebas
    /operaciones/scripts
    known-bugs
+   creacion-templates
 
