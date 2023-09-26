@@ -13,6 +13,7 @@ digraph G {
     
       subgraph cluster_reglas_calidad {
         label="Reglas"
+	color=darkgray;
  
     node [style=filled,color=white, shape=ssquare, ];
     r0  [label="Lote se asocia a un cuadro de control listo"]
@@ -35,6 +36,7 @@ digraph G {
     
 subgraph cluster_reglas_recoleccion {
         label="Reglas"
+		color=darkgray;	
  
     node [style=filled,color=white, shape=ssquare, ];
     r1 [label="Tener especificaciones completas"]

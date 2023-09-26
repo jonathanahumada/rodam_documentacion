@@ -1,0 +1,75 @@
+digraph G {
+    graph [fontname = "Handlee"];
+    node [fontname = "Handlee"];
+    edge [fontname = "Handlee", len=3, label="puede"];
+    layout=neato
+
+    bgcolor=white;
+    label="Flujo de emisión"
+
+    subgraph cluster_vistas {
+	style=filled;
+	color=invis;
+
+
+	node [style=filled, bgcolor=white, shape=component;]
+	maestra  [label="Muestras"]
+	por_aprobar [label="Muestras por aprobar"]
+	sin_enviar [label="Muestras sin enviar"]
+	facturacion [label="Facturacion Maestra"]
+	archivadas [label="Muestras archivadas"]
+    }
+
+    subgraph cluster_acciones {
+	style=filled;
+	color=invis;
+	
+	node [style=filled, bgcolor=white]
+	aprobar_muestra [label="dar aprobación final"]
+	devolver_muestra [label="devolver a micriobiología"]
+	facturar_seleccion [label="facturar selección"]
+	orden_compra_seleccion [label="asignar orden compra"]
+	filtrar [label="filtrar"]
+	exportar_certificados [label="exportar certificados"]
+	exportar_control [label="exportar control"]
+	exportar_lecturas [label="exportar lecturas"]
+	exportar_factura [label="exportar factura"]
+	detalle_muestra [label="ir al detalle"]
+	
+}
+
+subgraph cluster_db {
+    node [shape=cylinder]
+    color=invis;
+    todas
+    todas_sin_archivadas [label="todas - archivadas"]
+    db_sin_enviar [label="aprobacion final & no descargadas"]
+    db_por_aprobar [label="solicitan aprobación final"]
+    db_archivadas [label="archivadas"]
+}
+
+maestra -> todas_sin_archivadas [label="permite ver"]
+maestra -> exportar_control 
+maestra -> exportar_lecturas
+maestra -> exportar_certificados 
+maestra -> filtrar 
+maestra -> detalle_muestra
+
+por_aprobar -> aprobar_muestra
+por_aprobar -> devolver_muestra
+por_aprobar -> db_por_aprobar [label="permite ver "]
+
+sin_enviar -> db_sin_enviar [label="permite ver"]
+sin_enviar -> exportar_factura
+sin_enviar -> facturar_seleccion
+sin_enviar -> orden_compra_seleccion
+sin_enviar -> exportar_certificados
+
+facturacion -> todas_sin_archivadas [label="permite ver"]
+facturacion -> exportar_factura
+facturacion -> facturar_seleccion
+facturacion -> orden_compra_seleccion
+facturacion -> exportar_certificados
+
+archivadas -> db_archivadas [label="permite ver"]
+}
