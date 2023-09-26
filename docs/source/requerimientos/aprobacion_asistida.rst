@@ -126,6 +126,7 @@ Atributos de diseño
 
 Los atributos que considero pertinentes a destacar desde este nivel son los
 siguientes:
+
 - *observabilidad*: La solución deberá poder ser 'verificable' en
   algún sentido tangible por el usuario. Como es un sistema altamente
   dinámico en el que las reglas de reconocimiento de lecturas pueden

@@ -113,7 +113,9 @@ Probelmas comunes
 
 1. Cuando no hay igual número de elementos en una fila, datatables muestra una alerta en runtime
 
-.. image:: ./assets/ejemplo-alerta-columnas.png
+   .. image:: ./assets/ejemplo-alerta-columnas.png
+
+
 
    Para evitar poner el footer a mano en el caso vació se recomienta utilizar el custom template
    tag `filas_tbody_vacio`.
@@ -121,13 +123,15 @@ Probelmas comunes
 
    Primero se carga el templatetag
 
-.. code:: python
+   .. code:: python
 	  
 	  # en el template en que será utilizado 
 	  {% load tablas %}
 
-   Luego se puede utililizar
-.. code:: python
+
+   Luego se puede utililizar:
+
+   .. code:: python
 
 	# dentro de una tabla 
         {% empty %}
