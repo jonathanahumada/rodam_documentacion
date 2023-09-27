@@ -30,5 +30,6 @@ Approaches" de Eric J. Baude y Michael Bernsetein.
    resumen_validacion
    emision_de_certificados
    control_de_calidad
-   LERA_general.rst
-   aprobacion_asistida.rst
+   LERA_general
+   aprobacion_asistida
+   envio_correos
