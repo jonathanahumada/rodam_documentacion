@@ -80,7 +80,9 @@ Por ejemplo, aquí el PermissionRequiredMixin
 no afecta para nada el otro mixin de RedirigeALogin.
 
 .. code-block:: python
-
+		
+   from django.contrib.auth.mixins import PermissionRequiredMixin
+   
    class FacturacionMaestra(AreaMixin,
                          DashboardMixin,
                          TitleMixin,
@@ -152,7 +154,7 @@ custom, no necesita ser generalizado.
 FBV
 ------------------------------
 En las FBV los permisos se pueden
-poner con dlos decorators de `django.contrib.auth.decorators` .
+poner con los decorators de `django.contrib.auth.decorators`.
 
 
 
