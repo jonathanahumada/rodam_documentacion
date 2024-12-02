@@ -1,5 +1,5 @@
 ###################
-Guia de Desarrollo
+Guía de Desarrollo
 ###################
 
 :author: Jonatan Ahumada Fernández
@@ -21,4 +21,5 @@ Guia de Desarrollo
    /operaciones/scripts
    known-bugs
    creacion-templates
+   modo_realtime
 
