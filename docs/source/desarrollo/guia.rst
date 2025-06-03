@@ -21,5 +21,4 @@ Guía de Desarrollo
    /operaciones/scripts
    known-bugs
    creacion-templates
-   modo_realtime
 
