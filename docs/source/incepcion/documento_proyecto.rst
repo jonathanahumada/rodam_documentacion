@@ -19,7 +19,7 @@ establecimiento de la siguiente manera :
 - Proceso de análisis de laboratorio
 - Proceso de aseguramiento de la calidad
 - Proceso de gestión del cliente
-- proceso de gestión del medio ambiente 
+- Proceso de gestión del medio ambiente 
 
 En vista de que la implementación de todo el sistema de información tiene
 un alcance considerable. Se optó por segmentar el proyecto en pedazos más

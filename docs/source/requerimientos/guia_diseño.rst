@@ -22,12 +22,6 @@ Approaches" de Eric J. Baude y Michael Bernsetein.
 
 .. toctree::
 
-   srs
-   SDD
-   STPD
-   laboratorio_aceptacion
-   diccionario_datos
-   resumen_validacion
    emision_de_certificados
    control_de_calidad
    LERA_general
