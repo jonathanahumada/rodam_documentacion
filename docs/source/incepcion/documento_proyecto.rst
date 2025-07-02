@@ -6,7 +6,7 @@ Documento del Proyecto
 
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date: último build el |date|
+:date: 24 de febrero de 2021
 
        
 
