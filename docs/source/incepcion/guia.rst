@@ -18,10 +18,11 @@ y, adicionalmente, no dejan de ser valiosos para comprender el alcance inicial
 del proyecto. 
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Contenido
 
    documento_proyecto
    srs
    SDD
-   STPD
    laboratorio_aceptacion
   
