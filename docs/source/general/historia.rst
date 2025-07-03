@@ -3,7 +3,7 @@ Historia del proyecto
 
 :author: Jonatan Ahumada Fernández
 :contact: box@jade.lat
-:date: 2025-07-01
+:date: 1 de julio de 2025
 
 Rodam WebLab, como proyecto, ha pasado por varias fases. Como se verá
 más adelante, estas fases se ven reflejadas en la documentación.
