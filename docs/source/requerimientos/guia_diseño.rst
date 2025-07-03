@@ -1,5 +1,5 @@
 ####################
-Guía de Diseño
+Guía de diseño
 ####################
 
 En estos documentos se recogen los artefactos de diseño para el

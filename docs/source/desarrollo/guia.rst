@@ -1,5 +1,5 @@
 ###################
-Guía de Desarrollo
+Guía de desarrollo
 ###################
 
 :author: Jonatan Ahumada Fernández
