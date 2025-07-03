@@ -2,12 +2,10 @@
 Reporte de pruebas
 ====================
 
-
-.. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date:  último build el |date|
+:date:  30 de septiembre de 2022
 
 
 Aquí se presenta el reporte de cada prueba unitaria o de integración automatizada.

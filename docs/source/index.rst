@@ -20,6 +20,7 @@ recomiendo que veas :doc:`/general/vision_general`.
    /requerimientos/guia_diseño
    /desarrollo/guia
    /usuario/guia
+   /gxp/guia
    
 
 
