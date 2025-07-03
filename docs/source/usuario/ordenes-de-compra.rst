@@ -2,6 +2,10 @@
 Asignar orden de compra 
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date: 2 de febrero de 2023
+       
 Resumen
 ##############################
 

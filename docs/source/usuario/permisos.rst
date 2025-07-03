@@ -2,6 +2,10 @@
 Permisos
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date: 2 de febrero de 2023
+       
 Los permisos se utilizan para restringir el acceso a ciertas vistas.
 Las vistas no son solamente las páginas que se muestran al usuario, sino
 que tambien pueden ser *acciones*. Por ejemplo, emitir un certificado.

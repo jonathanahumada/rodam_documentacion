@@ -2,6 +2,10 @@
 Flujo de emisión
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date: 9 de febrero de 2023
+
 Resumen
 ##############################
 

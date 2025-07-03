@@ -2,7 +2,10 @@
 Facturar una muestra
 ##############################
 
-
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date: 9 de febrero de 2023
+       
 .. list-table:: Resumen
    :header-rows: 0
 

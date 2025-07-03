@@ -2,6 +2,11 @@
 Descarga de certificados
 ##############################
 
+:date: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date: 2 de febrero de 2023
+
+
 Resumen
 ##############################
 .. list-table:: Resumen
