@@ -21,6 +21,8 @@ Approaches" de Eric J. Baude y Michael Bernsetein.
 
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Contenido
 
    emision_de_certificados
    control_de_calidad

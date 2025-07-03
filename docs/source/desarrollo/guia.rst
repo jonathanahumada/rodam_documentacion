@@ -6,8 +6,8 @@ Guía de Desarrollo
 :contact: jaumaf@hotmail.com
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Contenido
 
    integracion-datatables
    especificacion-cuadros
