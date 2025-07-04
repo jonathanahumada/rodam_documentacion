@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Rodam Weblab'
+project = 'Rodam WebLab'
 copyright = '2025, Jonatan Ahumada Fernández'
 author = 'Jonatan Ahumada Fernández'
 
