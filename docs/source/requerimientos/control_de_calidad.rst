@@ -2,11 +2,10 @@
 Control de Calidad
 =============================================
 
-.. |date| date::
 
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date: último build el |date|
+:date: 2 de mayo de 2021
 
 
 
