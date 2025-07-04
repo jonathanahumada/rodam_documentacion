@@ -5,6 +5,13 @@ Permisos
 :author: Jonatan Ahumada Fernández
 :contact: box@jade.lat
 :date: 2 de febrero de 2023
+
+
+.. warning::
+   Este documento es *obsoleto*. Los permisos **especiales** son
+   indentificables en el modulo *protocols* del repositorio principal.
+   Los permisos **por defecto** de Django, se usarían como se esperaria.
+   
        
 Los permisos se utilizan para restringir el acceso a ciertas vistas.
 Las vistas no son solamente las páginas que se muestran al usuario, sino
@@ -36,8 +43,8 @@ Este es un listado de los permisos utilizados en la aplicación:
 	     "aprobar_cuadroanalitico", "aprueba cuadro analitico"
 	     "remitir_lotedemedio",  "remite lote de medio para que se le hagan lecturas de control"
 	     "remitir_lotedemedio", "desaprobar lote de medio"
-	     "aprobar_lotedemedio", "aprobar lote de medio",
-	     "devolver_lecturas_lotedemedio", "Puede devolver a estado remitido",
+	     "aprobar_lotedemedio", "aprobar lote de medio"
+	     "devolver_lecturas_lotedemedio", "Puede devolver a estado remitido"
 	     "marcar_agotamiento_lotedemedio", "marcar agotado"
 	     "solicitar_aprobacion_lotedemedio", "micriobiologia remite a calidad para que apruebe"
 	     "change_cuadrodecontrol", "editar cuadro de control"
@@ -45,8 +52,8 @@ Este es un listado de los permisos utilizados en la aplicación:
 	     "delete_cuadredecontrol", "eliminar cuadro de control"
 	     "marcar_listo_cuadrodecontrol", "Indicar que el cuadro de control se puede usar"
 	     "change_cliente", "Editar el cliente"
-	     "change_cliente",  "Editar representantes en cliente"
-	     "change_cliente",  editar correos de representatnes"
+	     "change_cliente", "Editar representantes en cliente"
+	     "change_cliente", "editar correos de representatnes"
 	     "delete_cliente", "Eliminar cliente"
 	     "delete_empresa", "eliminar empresa"
 	     "change_empresa", "editar la empresa"
