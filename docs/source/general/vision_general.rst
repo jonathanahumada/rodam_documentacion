@@ -55,31 +55,31 @@ técnica como funcional.
 Los capítulos del manual son los siguientes:
 
 
-Vision general
+**Vision general**
   Es el documento que estás leyendo. Se explica cómo
   entender la documentación a grandes rasgos. Es el punto de entrada
   al manual.
   
-Historia del proyecto
+**Historia del proyecto**
    Esta sección describe temporalmente la evolución del proyecto. Se
    recomienda tener una vision clara de la historia del proyecto al
    leer cada artefacto, para asegurarse de que se compenda el contexto
    en el que fue creado.
    
-Incepción del proyecto
+**Incepción del proyecto**
    Esta sección reune los documentos de la primera
    fase del proyecto.  Se recomienda primero leer historia del
    proyecto para entender la importancia de la primera fase. En
    síntesis, esta es la parte del legado del proyecto.
 
-Guía de usuario
+**Guía de usuario**
    Reune la documentación funcional que describe cómo usar el sistema. Cada
    entrada toca un tema dedicado del WebLab. La guía de usuario es corta
    porque no es factible cubrir todo el alcance del proyecto. Esta
    guia de usuario se complemente con el repositorio de videos, que
    también se encasilla como documentación funcional. 
 
-Guía de diseño
+**Guía de diseño**
    Reune artefactos que describen, a
    nivel alto, los atributos de diseño para las funcionalidades del
    WebLab. En el diseño, se sopesan "fuerzas" o "riesgos" y
@@ -89,13 +89,13 @@ Guía de diseño
    particularmente valioso. Más precisamente, es una *mezcla entre
    documentación técnica y funcional*. 
 
-Guía de desarrollador
+**Guía de desarrollador**
    Es la parte de documentación técnica que describe algunas prácticas
    recurrentes del lado de desarrollo. Esta documentación es especialmente
    útil para nuevos desarrolladores que se integren al proyecto.
 
-Entorno GxP
-   Esta parte recoge algunos artefactos críticos para el cumplimiento GXP.
+**Entorno GxP**
+   Esta parte recoge algunos artefactos críticos para el cumplimiento GxP.
    Algunos de estos artefactos se generan 'a pedido', mediante su propio
    procedimiento. Sin embargo, se incluyen en el manual para referenciarlos
    fácilmente.

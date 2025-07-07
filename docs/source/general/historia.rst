@@ -5,21 +5,28 @@ Historia del proyecto
 :contact: box@jade.lat
 :date: 1 de julio de 2025
 
-Rodam WebLab, como proyecto, ha pasado por varias fases. Como se verá
-más adelante, estas fases se ven reflejadas en la documentación.
+Rodam WebLab, como proyecto, ha pasado por varias fases. El cambio más
+crítico a entender es que, que desde su incepción en el 16 de
+noviembre de 2020, el proyecto pasó de ser un proyecto estilo
+*waterfall*, a un proyecto con un marco *ágil* [#f1]_.  Como se verá más
+adelante, estas fases se ven naturalmente reflejadas en la
+documentación.
 
-En términos simples, se debe entender que desde su incepción en el 16
-de noviembre de 2020, el proyecto pasó de ser un proyecto estilo
-*waterfall*, a un proyecto con un marco *ágil*.
 
-La razón principal de esto es que hubieron cambios en el alcance del
-proyecto, que imposibilitaron la concreción del proyecto dentro del
-plazo inicialmente pactado y según el primer levantamiento de
-requerimientos.
+La razón principal de esta transformación es que hubieron cambios en
+el alcance del proyecto, que imposibilitaron la concreción del
+proyecto dentro del plazo inicialmente pactado y según el primer
+levantamiento de requerimientos.
 
-Aquí se hará un breve resumen de las fases
+Fases del proyecto
+-------------------
 
-Primera fase: incepción
+Aquí se hará un breve resumen de las *fases del proyecto*. Estas no
+guardan una relación directa con las *fases del proceso de desarrollo
+de software*, aunque sí hay puntos de contacto. Estas fases son, más
+bien, un recuento de *épocas significativas* del proyecto.
+
+**Primera fase: incepción**
   Desde el 16 de noviembre de 2020 hasta el 24 de febrero de
   2021. Aquí se hicieron dos prototipos: una aplicación de escritorio
   usando TKinter y luego un cuaderno de Jupyter que muestra el flujo de los
@@ -27,7 +34,7 @@ Primera fase: incepción
   que se puede evidenciar el flujo principal de los datos de la aplicación.
   Teniendo esto claro, se pasó a la siguiente fase.
   
-Segunda fase: desarrollo Django
+**Segunda fase: desarrollo Django**
   Desde el 24 de febrero de 2021 hasta  el 17 de mayo de 2021.
   Gracias a la prueba de aceptación, se tenia
   un prototipo de la aplicación a construir.  Así que se seleccionó
@@ -41,7 +48,7 @@ Segunda fase: desarrollo Django
   datos de calidad que no se podían obviar. Así, fue necesario incorporar
   el flujo de calidad dentro de la primera iteración del WebLab.
   
-Tercera fase: fase crítica de reconfiguración del proyecto
+**Tercera fase: fase crítica de reconfiguración del proyecto**
    Desde el 18 de mayo hasta el 29 de septiembre de 2021.
    En esta fase se buscan incorprar funcionalidades que faltaron
    en el primer levantamiento de requerimientos. Ejemplo de esto
@@ -51,7 +58,7 @@ Tercera fase: fase crítica de reconfiguración del proyecto
    las dificultades y dieron paso a la siguiente fase
    
 
-Cuarta fase: primer despliegue y desarrollo ágil
+**Cuarta fase: primer despliegue y desarrollo ágil**
   Desde su primer despliegue el 29 de septiembre de 2021 y, en adelante, el proyecto
   viró paulatinamente hacia un marco de desarrollo ágil. Con esto se entiende
   que es un proyecto de software con alcance variable, al que puede añadirse
@@ -77,8 +84,26 @@ y las partes del manual.
 +------------+------------+
 | Guías      |    4       |
 +------------+------------+
-| Tablero ROD|   1        |
+| Entorno GxP|     4      |
++------------+------------+
+| Tablero ROD|   2        |
 +------------+------------+
 | Tablero RA | 4          |
 +------------+------------+
 
+Brilla por su ausencia la documentación durante la fase 3, precisamente porque no había
+herramientas de gestión para lidiar con la transición de un modelo de gestión a otro.
+
+.. note:: 
+
+   Los tableros ROD y RA son tableros de incidencia estilo *agile* que, dentro del proyecto,
+   funcionan como *catálogo del producto*. Estas son herramientas para administrar
+   los requerimientos del proyecto. Estos *no* hacen parte de este manual, pero se mencionan
+   para mayor claridad de los *stakeholders*.
+
+  
+.. rubric:: Notas al pie
+
+
+.. [#f1] Contrario al entendimiento común, adoptar un marco ágil no es equivalente a seguir la metodología SCRUM o Kanban. Durante las fases,
+	 se aclara qué se entiende por marco ágil dentro del presente proyecto.

@@ -12,10 +12,11 @@ de software: el documento de levantamiento de requerimientos,
 el documento de diseño, el plan de pruebas, diccionario de datos, etc.
 
 Luego de la tercera fase del proyecto, se hizo claro que estos
-documentos serían insuficientes para el alcance creciente del proyecto.
-Sin embargo, se conservan como parte de la gestión del cambio del proyecto
-y, adicionalmente, no dejan de ser valiosos para comprender el alcance inicial
-del proyecto. 
+documentos, así como el proceso *waterfall* que guiaba su producción,
+serían insuficientes para el alcance creciente del proyecto.  Sin
+embargo, se conservan como parte de la gestión del cambio del proyecto
+y, adicionalmente, no dejan de ser valiosos para comprender el alcance
+inicial del proyecto.
 
 .. toctree::
    :maxdepth: 1
