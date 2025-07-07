@@ -2,8 +2,20 @@
 Selectores
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date:  primera versión 2023-01-25
+
+.. note::
+
+   Este artículo es un *stub*. Los selectores son un concepto importante
+   y necesitan más ampliación.
+   
 Gestionar el caso nulo para que las vistas no se preocupen por eso.
 Sobre todo con el bootstrap que hace Django al principio.
+
+
+   
 .. code-block:: python
 		
 	def muestras_aprobadas(self):

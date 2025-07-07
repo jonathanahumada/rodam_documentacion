@@ -2,7 +2,11 @@
 Scripts
 =======
 
-Este documento registra algunas operaciones comunes.
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date:  primera versión 2022-09-30, último build el |date|
+
+Este documento registra algunas operaciones comunes que se realizan mediante scripts.
 
 Sincronización entre desarrollo y produccion
 ============================================
@@ -35,13 +39,16 @@ similarmente, para crear un tunnel ssh
 Recuperar una base de datos 
 ------------------------------
 La documentación de postgres propone este commando
+
 .. code-block:: bash
+		
 		psql --set ON_ERROR_STOP=on dbname < dumpfile
 
 En la practica, esto genera que psql interprete `dbname` como el rol.
 Por eso se usa
 
 .. code-block:: bash
+		
 		psql -d dbname < dumpfile 
 
 Gestionar de estados

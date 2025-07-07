@@ -1,6 +1,10 @@
 Integración con Datatables
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: jaumaf@hotmail.com
+:date:  primera versión 2023-01-16
+
 Datatables ofrece varias formas de consumir datos.
 Se decidió utilizar el DOM como fuente. Esto es:
 
