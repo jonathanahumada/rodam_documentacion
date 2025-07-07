@@ -3,7 +3,7 @@ Ejecución de pruebas
 ##############################
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera version 2023-06-06, último build el |date|
 	  
 

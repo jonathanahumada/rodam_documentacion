@@ -3,7 +3,7 @@ Documento de Diseño
 ===================
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  12 de febrero de 2021
 
 

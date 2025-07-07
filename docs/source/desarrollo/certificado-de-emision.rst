@@ -2,7 +2,7 @@
 Certificado de emision
 ##############################
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera version 2023-07-31, último build el |date|
 	  
 

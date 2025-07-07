@@ -3,7 +3,7 @@ Diccionario de datos
 ====================
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  17 de febrero de 2021
 
 

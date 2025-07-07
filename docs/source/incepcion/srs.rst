@@ -4,7 +4,7 @@ Documento de Especificación de Requerimientos
 
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date: 12 de febrero de 2021
 
 

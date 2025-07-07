@@ -5,7 +5,7 @@ Casos  LERA
 .. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera version 2023-05-24, último build el |date|
 
 

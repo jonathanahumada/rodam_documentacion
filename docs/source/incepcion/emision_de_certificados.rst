@@ -3,7 +3,7 @@ Emisión de certificados
 =============================================
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date: <2021-01-15 Fri>
 
 Introducción

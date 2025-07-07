@@ -4,7 +4,7 @@ Reporte  de validación
 
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  30 de septiembre de 2022
 
 

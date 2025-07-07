@@ -3,7 +3,7 @@ Plan de pruebas
 ===================
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  30 se septiembre de 2022
 
 

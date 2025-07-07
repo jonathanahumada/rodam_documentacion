@@ -5,7 +5,7 @@ Documento del Proyecto
 .. |date| date::
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date: 24 de febrero de 2021
 
        

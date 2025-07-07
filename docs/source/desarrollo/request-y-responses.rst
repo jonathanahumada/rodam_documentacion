@@ -3,7 +3,7 @@ Requests y responses
 ##############################
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera versión 2023-01-25
 
 Inevitablemente se tiene que lidiar con requests

@@ -2,7 +2,7 @@ Integración con Datatables
 ##############################
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera versión 2023-01-16
 
 Datatables ofrece varias formas de consumir datos.

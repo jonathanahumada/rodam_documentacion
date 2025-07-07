@@ -3,7 +3,7 @@ Scripts
 =======
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera versión 2022-09-30, último build el |date|
 
 Este documento registra algunas operaciones comunes que se realizan mediante scripts.
