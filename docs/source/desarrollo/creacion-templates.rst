@@ -3,7 +3,7 @@ Creación de templates
 ##############################
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera version 2023-09-19, último build el 
 
 Resumen

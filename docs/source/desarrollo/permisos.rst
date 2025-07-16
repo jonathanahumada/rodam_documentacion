@@ -2,6 +2,10 @@
 Permisos y autorización
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date:  primera versión 2023-01-25
+
 
 Uso general de los permisos
 ##############################

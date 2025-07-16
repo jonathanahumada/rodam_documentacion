@@ -2,11 +2,9 @@
 Plan de pruebas
 ===================
 
-.. |date| date::
-	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
-:date:  último build el |date|
+:contact: box@jade.lat
+:date:  30 se septiembre de 2022
 
 
 
@@ -15,7 +13,7 @@ Introducción
 ============
 
 Este documento constituye el plan de pruebas para el sistema
-de información de Rodam análisis. El propósito de este
+de información de Rodam Análisis. El propósito de este
 documento es explicar qué tipo de pruebas se necesitan llevar
 a cabo y por qué, con base a la estimación de riesgos y las
 funcionalidades descritas en la  *Especificación de

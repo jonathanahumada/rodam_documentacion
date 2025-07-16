@@ -2,11 +2,10 @@
 Sistema LERA
 ##############################
 
-.. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
 :contact: jaumaf@hotmail.com
-:date:  último build el |date|
+:date:  15 de mayo de 2023
 
 Resumen
 ##############################

@@ -5,7 +5,7 @@ LERA (Guía de desarrollo)
 .. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera versión 2023-05-26, último build el |date|
 
 .. contents::

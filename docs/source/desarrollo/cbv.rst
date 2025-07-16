@@ -3,7 +3,7 @@ CBV
 ##############################
 
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
+:contact: box@jade.lat
 :date:  primera version 2023-01-25, último build el |date|
 	  
 Las Class Based Views son un componente

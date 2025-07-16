@@ -2,9 +2,14 @@
 Requests y responses
 ##############################
 
+:author: Jonatan Ahumada Fernández
+:contact: box@jade.lat
+:date:  primera versión 2023-01-25
+
 Inevitablemente se tiene que lidiar con requests
-y responses directamente por que la funcionalidad
-de vistas genericas es límitada. Aqui hay unas quias
+y responses directamente porque la funcionalidad
+de vistas genericas es límitada. Aqui hay unas guias para hacerlo
+consistentemente.
 
 
 

@@ -4,20 +4,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentación de Laboratorio Web de Rodam Análisis S.A.S
+Manual de Rodam WebLab
 ===========================================================
 
+Bienvenido al índice del Manual de Rodam WebLab. Para empezar,
+recomiendo que veas :doc:`/general/vision_general`.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Contenido
 
+   /general/vision_general
+   /general/historia
+   /incepcion/guia
    /requerimientos/guia_diseño
-   /requerimientos/laboratorio_aceptacion
-   /requerimientos/reporte_pruebas
-   /requerimientos/diccionario_datos
    /desarrollo/guia
    /usuario/guia
+   /gxp/guia
    
 
 

@@ -1,12 +1,11 @@
-====================
+======================
 Reporte  de validación
-====================
+======================
 
-.. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
-:date:  último build el |date|
+:contact: box@jade.lat
+:date:  30 de septiembre de 2022
 
 
 
@@ -103,7 +102,7 @@ Riesgo 8: las componentes utilizados, tanto de software como de hardware,  son i
 -----------------------------------------------------------------------------------------------------------------
 - la selección del framework de programación fue lenta y deliberada. Se hicieron prototipos antes de iniciar el desarrollo en el framework final.
 - El framework seleccionado (Django) tiene una extensa base de usuario, ampliamente documentado y probado. Es reconocido por su filosofía de diseño y confiabilidad. 
-- Se hizo una prueba inicial del proveedor del Servidor Virtual (IaaS) desde el 6 de Junio de 2021, antes de iniciar la primera operación el 9 de septiembre de 2021
+- Se hizo una prueba inicial del proveedor del Servidor Virtual (IaaS) desde el 6 de Junio de 2021, antes de iniciar la primera operación el 29 de septiembre de 2021
 
 
 Riesgo 9: la interfaz gráfica no es inmediatamente comprensible o estéticamente desactualizada

@@ -1,12 +1,10 @@
 =================================
 Prueba de aceptación
 =================================
-
-.. |date| date::
 	  
 :author: Jonatan Ahumada Fernández
-:contact: jaumaf@hotmail.com
-:date:  último build el |date|
+:contact: box@jade.lat
+:date:  12 de febrero de 2021
 
 
 
