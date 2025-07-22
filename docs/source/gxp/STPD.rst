@@ -73,6 +73,35 @@ Además, se hacen pruebas constantes de esta naturaleza:
    se hacen en conjunto con el *product owner*, y sirven como un punto
    de validación, además de verificación, del sistema.
 
+Estrategia general
+===================
+
+La estrategia de pruebas se guía por los siguientes principios:
+
+- se parte de que la calidad del software empieza desde su diseño,
+  procurando encapsular la lógica de negocio en unidades denominadas
+  servicios, en vez de distribuir la funcionalidad en las vistas del
+  *framework* web.
+
+- siguiendo el QMS del proveedor, dentro de los servicios "se
+  priorizan transformaciones, cálculos, validaciones internas, y
+  lógica de negocio repetible". Se evitan pruebas espurias.
+
+- las pruebas deben probar los componentes más internos del sistema,
+  entendiendo que sus efectos se propagarán hacia componentes
+  "externos", con menor criticalidad. Por lo tanto, si se prueban los
+  "nodos de confianza", se puede esperar que las funcionalidades que
+  utilizen tales nodos funcionarán acordemente, al menos en cuanto a
+  lo crítico de la lógica de negocio.
+  
+- para los flujos principales, debe haber un cuerpo considerable de
+  pruebas de regresión que permitan al desarollador realizar cambios
+  constantes con seguridad.
+
+- apalancarse lo máximo posible en herramientas probadas, con altos
+  estánderes de calidad que cuentan en sí mismos con pruebas. Cuando
+  esto no sea posible, se aísla la herramienta con algún tipo
+  de barrera arquitectónica (*architectural boundary*).
 
 Estimación de riesgos
 ======================
@@ -200,7 +229,9 @@ Luego, mediante scripts, se elabora la matriz de trazabilidad de las pruebas.
 Los scripts producen una matriz en formato csv y otra en formato
 PDF. Estos artefactos serán generados a pedido de la entidad regulada.
 
-La versión csv de la matriz de trazabilidad se incorpora al repositorio principal.
+La versión csv de la matriz de trazabilidad se incorpora al repositorio principal,
+sujeta a versión de cambios. Por otro lado, la versión en PDF es enviada a la entidad
+regulada.
 
 Verificación
 =============
