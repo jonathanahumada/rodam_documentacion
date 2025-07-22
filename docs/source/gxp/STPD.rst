@@ -4,67 +4,139 @@ Plan de pruebas
 
 :author: Jonatan Ahumada Fernández
 :contact: box@jade.lat
-:date:  30 se septiembre de 2022
+:date:  21 de julio de 2025
 
 
+Objetivos
+==============
+
+El propósito de este plan de pruebas es establecer un marco
+sistemático para la verificación del sistema Rodam WebLab,
+asegurando que:
+
+- Las funcionalidades implementadas cumplen con los requerimientos definidos.
+
+- Los riesgos identificados han sido mitigados mediante pruebas adecuadas.
+
+- El software se comporta de forma mpredecible y confiable en condiciones normales y anómalas.
+
+- El sistema pueda actualizarse constantemente, asegurando que con
+  cada actualización la funcionalidad previa se siga comportando como
+  se espera.
+
+  
+Las pruebas realizadas proporcionan evidencia documentada que respalde
+la validación del sistema.
+
+Este plan también busca:
+
+- Definir los tipos de pruebas a realizar, sus criterios de ejecución y salida.
+
+- Especificar la organización de las pruebas en relación con los módulos funcionales del sistema.
+
+- Establecer un mecanismo que facilite la trazabilidad entre requerimientos y pruebas.
+
+El alcance de este plan incluye tanto pruebas automatizadas como
+manuales, abarcando pruebas unitarias, de integración, y de validación
+final por parte del usuario.
 
 
-Introducción
-============
+Tipos de pruebas
+==================
 
-Este documento constituye el plan de pruebas para el sistema
-de información de Rodam Análisis. El propósito de este
-documento es explicar qué tipo de pruebas se necesitan llevar
-a cabo y por qué, con base a la estimación de riesgos y las
-funcionalidades descritas en la  *Especificación de
-Requerimientos*.
-
-
-Necesidades del tipo de pruebas
-================================
 Al ser un sistema de categoría GAMP tipo 5 (a la medida), las pruebas
 realizadas sobre el software son variadas y de distintas naturaleza.
-Sobre el software se realizarán pruebas a) unitarias b) de integración
-c) manuales y d) de validación.
+Se debe entender que las pruebas automatizadas pueden ser:
+
+**unitarias**
+   Se prueba un componente mínimo (una *unidad*) del software de manera aislada con
+   entradas y salidas bien delimitadas.
+
+**de integración**
+   Se prueba la interacción de varios componentes juntos, tal como sucede en la aplicación, con miras
+   a que su funcionamiento no presente un error. 
+   
+**punta a punta**
+   Se prueba grandes flujos de funcionalidad. Por
+   ejemplo, la generación de un certificado partiendo desde el ingreso
+   de una muestra. Estas pruebas requieren de gran inversión. Sin
+   embargo, son necesarias porque permiten asegurar que en cada
+   incremento el funcionamiento de la aplicación se conserva
+   (*regression tests*).
+
+Además, se hacen pruebas constantes de esta naturaleza:
+
+**inspección manual**
+   Se revisa la aplicación final, ya sea en el
+   ambiente de producción o de desarrollo, y se verifica que la
+   funcionalidad bajo escrutinio funcione. Típicamente estas pruebas
+   se hacen en conjunto con el *product owner*, y sirven como un punto
+   de validación, además de verificación, del sistema.
 
 
 Estimación de riesgos
-=====================
-Aquí se hará un resumen sucinto de los riesgos más relevantes
-del presente sistema.
+======================
 
+Durante cada incremento, el *product owner* puede proponer pruebas
+necesarias según su propia estimacion de riesgo y estas serán
+incluidas como un requerimiento más.
+
+Sin embargo, al ser díficil para el *product owner* establecer pruebas
+al nivel de detalle necesario, el *desarrollador* también hace un
+análisis de riesgo para cada incremento y, por medio de su ojo
+experto, determina qué componentes del sistema deben ser probados y
+qué tipo de pruebas deben ser utilizadas.
+
+Como guía al ojo experto, se utiliza esta categorización de niveles de riesgos:
 
 Riesgo alto
 -----------
-- el modelo de datos del sistema es insuficiente y/o genera inconsistencias en los datos
-- el artefacto principal, el certificado de emisión, es incompleto
-- el artefacto principal, el certificado de emisión, no es flexible a posteriores cambios
-- los datos no son accessibles o de difícil interpretación
-- los datos en los formularios no son restringidos de forma adecuada y se permiten ingresar datos erróneos o iconsecuentes
+- el incremento genera inconsistencias en los datos o ambiguedades que luego deberán ser arregladas via script
+- el incremento altera cualquiera de los aspectos del certificado de emision, sea en su presentación o en su contenido
+- el incremento deja al sistema en un estado inflexible, reacio a una posterior modificación, sin un plan de contigencia en su lugar
+- el incremento deja una vulnerabilidad relacionada con la Confidencialidad, Integridad Y Accesibilidad de los datos
 
+El *desarrollador* siempre debe escribir pruebas automatizadas para
+mitigar el *riesgo alto*, sin importar el mayor esfuerzo requerido,
+cuidandose de mantener sus herramientas de pruebase (*fixtures*,
+*factories*, *stubs*) en buen estado.
 
 Riesgo medio
 ------------
 
-- los requerimientos cambian a medida que se avanaza el desarrollo y se obtiene mayor información sobre las necesidades
-- cambiar los procesos de negocio que antiguamente se hacían con hojas de cálculo puede dar lugar a confusiones
+- el incremento introduce funcionalidad que innova en un proceso de
+  negocio, cuyo éxito depende no solo de la excelencia técnica, sino
+  de la adopción del usuario, a menudo sujeta a variables sobre las
+  que no hay control.
+- el incremento introduce un error en los formularios y se permiten
+ingresar datos erróneos o inconsecuentes.
+- el incremento introduce un cambio en la lógica de negocio, dentro de
+  un componente bien establecido dentro del sistema. Por ejemplo, que
+  en una validación entre salas, se añada un procedimiento de
+  validación adicional.
+
+El *desarrollador* algunas veces escribe pruebas automatizadas para el *riesgo medio*.
+
 Riesgo bajo
 ------------
-- las componentes utilizados, tanto de software como de hardware,  son insuficientes o presentan fallas
-- la interfaz gráfica no es inmediatamente comprensible o estéticamente desactualizada
+- el incremento introduce errores estéticos o cambios en la ubicación de botones.
+- el incremento introduce funcionalidades con permisos excesivos, que requieren una configuración adicional.
 
-
+El *desarollador* no escribe pruebas para *riesgo bajo* (mas que nada,
+sobre la interfaz de usuario), dejando que los usuarios finales del
+sistema reporten cualquier no conformidad al respecto. Estos errores
+siempre pueden ser arreglados a gran velocidad y no comprometen la
+lógica de negocio.
 
 
 La organización de las pruebas
 ==============================
 
-Como se estable en la *Especificación de Requerimientos*, el
-software está conceptualmente definido en áreas funcionales
-o submodulos. Así, la estructura general de las pruebas
-se organiza según esta estructura y no según el tipo
-de prueba (unitaria o de integración). Un ejemplo
-de la organización de las pruebas es::
+Como se estable en la *Especificación de Requerimientos*, el software
+está conceptualmente definido en áreas funcionales o submodulos. Así,
+la estructura general de las pruebas se organiza según esta estructura
+y no necesariamente según el tipo de prueba (unitaria o de
+integración). Un ejemplo de la organización de las pruebas es::
 
   tests  
   ├── artefactos
@@ -77,50 +149,71 @@ de la organización de las pruebas es::
   ├── validaciones
   └── vistas
 
+Las utilidades de ayuda de las pruebas se separan en el módulo `factories` y siguen la misma estructura mencionada anteriormente. Por ejemplo::
 
-Pruebas unitarias
-=================
-Las pruebas unitarias constituyen la parte más cuantiosa de las pruebas.
-Su objetivo es asegurar que el comportamiento de una unidad de computación
-sea el estipulado por los requisitos. Por este motivo, se utilizan
-pruebas automatizadas. Estas pruebas son en sí mismas piezas de código
-ejecutable y su salida produce un reporte similar a este::
+	mysite/factories/
+	├── model
+	│   ├── anotaciones
+	│   ├── calidad
+	│   ├── catalogo
+	│   ├── emision
+	│   ├── ingreso
+	│   ├── __init__.py
+	│   ├── inventario
+	│   ├── login
+	│   ├── __pycache__
+	│   └── recoleccion
 
-  test_se_necesita_tener_firma_y_logo (tests.emision.test_emisorDeCertificado.Test_EmisorDeCertificado) ... ok
-
-
-Pruebas de integracion 
-=======================
-El objetivo de las pruebas de integración es asegurar que dos o más módulos
-computacionales se relacionan entre sí de forma adecuada. Estas pruebas también
-son automatizadas. Como la codificación de las pruebas de integración es compleja,
-su número es reducido. Los criterios  para realizar una prueba de integración
-son su efecto en la cadena de valor y el riesgo que conlleva el fallo de los
-componentes implicados.
-
-Las áreas que más tienen pruebas de integracion son: el área de emisión de
-certificados, el área de recolección de resultados y el los procesos de
-validación al ingresar, especificar y realizar lecturas de una muestra.
-
-Por ejemplo, como la emisión de certificado es la culminación del proceso
-y genera un artefacto importante (el certificado de emisión).
-Hay pruebas de integración que generan una muestra automáticamente, hacen las
-lecturas y luego exportan un certificado::
-
-  test_se_imprime_con_datos_falsos (tests.reporter.test_certificado_de_emision.PDF_Reporter) ... skipped ''
-  test_se_integra_con_la_muestra (tests.reporter.test_certificado_de_emision.PDF_Reporter) ... ok
+	
 
 
+Herramientas de pruebas
+=========================
 
-Pruebas manuales
-================
-El objetivo de las pruebas manuales es verificar aspectos del software
-para los que el desarrollo de pruebas automatizadas consumiría demasiados
-recursos (tiempo de desarrollo y complejidad del sistema). Por lo
-general, las pruebas manuales se utilizan para verificar: la navegación
-por el sitio web,  y los opciones desplegables en formularios y la
-autorización a cierta funcionalidad del sistema dependiendo del usuario.
+El WebLab utiliza las siguientes herramientas:
 
+- `unittest`_ mediante `django.tests`_
+- `factory_boy`_
+  
+.. _unittest: https://docs.python.org/3/library/unittest.html
+.. _django.tests: https://docs.djangoproject.com/en/5.2/topics/testing/overview/
+.. _factory_boy: https://factoryboy.readthedocs.io/en/stable/index.html
+  
+Trazabilidad de las pruebas
+===============================
+
+Cada vez que se escribe una prueba, esta se vincula al catálogo del
+producto utilizando su código en el *docstring* del método de prueba::
+
+     def test_multidimensiona_un_string(self):
+        "ROD-33 Flujo emisión."
+        tabla = self.rep._multidimensionar(
+            "Esto debe quedar en una lista multidimensional. Para reportlab es una tabla"
+        )
+
+        self.assertIsInstance(tabla, list)
+        self.assertIsInstance(tabla[0], list)
+
+
+Luego, mediante scripts, se elabora la matriz de trazabilidad de las pruebas.
+
+Los scripts producen una matriz en formato csv y otra en formato
+PDF. Estos artefactos serán generados a pedido de la entidad regulada.
+
+La versión csv de la matriz de trazabilidad se incorpora al repositorio principal.
+
+Verificación
+=============
+
+El objetivo de la verificación es que el *desarollador* pueda asegurar
+con un nivel alto de confiabilidad que el sistema que implementó se
+comporta de acuerdo a su diseño.
+
+El *desarrollador*, *al menos* al finalizar cada incremento, verifica que la suite de pruebas
+esté pasando. De lo contrario, no se procede a la actualización del software.
+
+El *reporte de pruebas* de este paso de verificación se incorpora por
+escrito al manual a pedido de la entidad regulada.
 
 
 Validación
@@ -128,9 +221,17 @@ Validación
 El objetivo de las pruebas de validación es
 verificar que la funcionalidad sea utilizable por parte del usuario
 final. Cada vez que se finaliza un sprint, la nueva funcionalidad se
-sube al ambiente de producción. Luego, se notifica de la actualización
-al dueño del producto. Este recibe un breve resumen  de la funcionalidad tomada
-del sistema de control de cambios. Un ejemplo de esta notificacion es::
+sube al ambiente de producción.
+
+La validación sucede en al menos dos momentos:
+
+- durante una ceremonia de predespliegue en el entorno de desarrollo
+- durante una ceremonia de cierre en el entorno de producción 
+
+Adicionalmente, al entrar a producción se notifica de la actualización
+al dueño del producto, haciendo énfasis en posbibles riesgos. Este
+recibe un breve resumen de la funcionalidad tomada del sistema de
+control de cambios. Un ejemplo de esta notificacion es::
 
   commit 510a495eb0bf59161765850bcfa116c8ee275e96 (correcciones_daniel_2022_02_11)
   Author: Jonathan Ahumada <jaumaf@Jonathans-MacBook-Air.local>
@@ -154,5 +255,27 @@ del sistema de control de cambios. Un ejemplo de esta notificacion es::
 Luego, el cliente valida (hace una inspección manual de la
 funcionalidad) sobre el sistema en producción. Si la funcionalidad no
 cumple con lo esperado, se abre una tarjeta en el sistema de
-seguimiento de incidencias (Jira).
+seguimiento de incidencias (Jira) o, en caso de ser necesario, se
+realiza un *rollback*.
+
+Criterios de entrada
+=====================
+
+Antes de ejecutar una prueba, deben cumplirse los siguientes criterios:
+
+- Las migraciones de base de datos están aplicadas y reflejan el estado esperado del sistema.
+- Los requerimientos asociados a la funcionalidad a probar están
+  madurados, por lo menos a mayor detalle que un requerimiento de alto
+  nivel.
+- Se cuenta con los datos de prueba, fixtures o herramientas necesarias para ejecutar el escenario.
+- Para pruebas manuales y de validación, el cliente o usuario final ha sido notificado y está disponible para realizar la verificación.
+
+Criterios de salida
+====================
+
+Una prueba se considera finalizada cuando:
+
+- Todos los pasos definidos en el caso de prueba han sido ejecutados y pasan para el estado del sistema que pasa a la actualización.
+- El resultado esperado ha sido observado sin errores ni desviaciones críticas.
+- El sistema ha retornado a un estado conocido y consistente, listo para pruebas futuras.
 
