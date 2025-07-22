@@ -18,7 +18,7 @@ asegurando que:
 
 - Los riesgos identificados han sido mitigados mediante pruebas adecuadas.
 
-- El software se comporta de forma mpredecible y confiable en condiciones normales y anómalas.
+- El software se comporta de forma predecible y confiable en condiciones normales y anómalas.
 
 - El sistema pueda actualizarse constantemente, asegurando que con
   cada actualización la funcionalidad previa se siga comportando como
