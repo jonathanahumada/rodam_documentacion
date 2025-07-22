@@ -41,3 +41,7 @@ han sido solucionados.
 **Nombres de productos se desbordan de los controles**
      Los nombres muy largos no caben en los controles. Especialmente para el control *select*, es muy difícil y no recomendado alterar
      los estilos, porque estos utilizan el sistema subyacente el OS. Esto arruina la legibilidad de algunos formularios.
+
+**Ingreso por solicitud esporádicamente produce saltos en id de muestras**
+      Cada vez que se hace un ingreso por solicitud, el sistema corre un bucle por cada muestra solicitada y crea una correspondiente muestra de ingreso usando la sequencia de llave primaria
+      de `ingreso.Muestra`. Sin embargo, se ha reportado que algunas veces se saltan números de esta sequencia. No es claro el porqué el sistema se comporta así, pero sucede muy infrecuentemente. 
