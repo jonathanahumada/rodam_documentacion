@@ -12,6 +12,11 @@ Utiliza reStructuredText y otras utilidades.
 - dot
 - plantuml
 
+ Para visualizar el build html de los documentos en ambiente de desarrollo, usar
+
+.. code-block:: bash
+
+		python -m http.server 
 Componentes
 ============
 
