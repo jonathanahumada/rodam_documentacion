@@ -25,4 +25,5 @@ del tiempo.
    /operaciones/scripts
    known-bugs
    creacion-templates
+   /operaciones/monitoreo
 
